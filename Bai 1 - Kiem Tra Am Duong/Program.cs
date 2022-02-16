@@ -18,15 +18,15 @@ namespace Bai_1
             //sử dụng cấu trúc điều kiện if
             if (iSoN == 0)
             {
-                Console.Write("n là Số không âm không dương");
+                Console.Write(iSoN + " là Số không âm không dương");
             }
             if (iSoN > 0)
             {
-                Console.Write("Kết quả: n là Số dương");
+                Console.Write("Kết quả: {0} là Số dương", iSoN);
             }
             if (iSoN < 0)
             {
-                Console.Write("Kết quả: n là Số âm");
+                Console.Write("Kết quả: {0} là Số âm", iSoN);
             }
         }
     }
