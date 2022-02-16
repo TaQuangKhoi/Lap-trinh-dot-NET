@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bai 3", "16 Feb 2022\Bai 3\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bai 4", "16 Feb 2022\Bai 4\Bai 4.csproj", "{E7A1C01A-F891-4D88-8195-2C2AD46B9D9B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "16 Feb 2022", "16 Feb 2022", "{52614E37-5706-4126-AAAD-E1510F1A233C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE75FEDF-1CED-4088-82AC-6A62D69ED281} = {52614E37-5706-4126-AAAD-E1510F1A233C}
+		{513DA421-19CE-447E-9D27-395E2BA35D85} = {52614E37-5706-4126-AAAD-E1510F1A233C}
+		{7A1DC71D-67E0-494D-9A5F-3E9E523DBD0F} = {52614E37-5706-4126-AAAD-E1510F1A233C}
+		{E7A1C01A-F891-4D88-8195-2C2AD46B9D9B} = {52614E37-5706-4126-AAAD-E1510F1A233C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F3C6CFC-555F-4580-A03D-A6145ACCB8BB}
