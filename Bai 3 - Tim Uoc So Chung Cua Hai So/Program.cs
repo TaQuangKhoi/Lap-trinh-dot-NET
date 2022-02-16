@@ -6,11 +6,11 @@ namespace Bai_3___Tim_Uoc_So_Chung_Cua_Hai_So
     {
         static void Main(string[] args)
         {
-            int a = 0, b = 0;
-            NhapDuLieu(ref a, ref b);
+            int a, b;
+            NhapDuLieu(out a, out b);
             Console.Write("UC là: " + XetUocSoChungLonNhat2So(a, b));
         }
-        static void NhapDuLieu (ref int a, ref int b)
+        static void NhapDuLieu (out int a, out int b)
         {
             do
             {
