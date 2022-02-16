@@ -8,7 +8,7 @@ do
 {
     n = int.Parse(Console.ReadLine());
 }
-while (n > 0);
+while (n < 0);
 
 // Vòng lập tính tích
 for (int i = 1; i <= n; i++)
@@ -16,4 +16,4 @@ for (int i = 1; i <= n; i++)
     tich = tich * i;
 }
 
-Console.Write("Tich la: " + tich);
+Console.Write("Tích la: " + tich);
