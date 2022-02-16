@@ -8,8 +8,7 @@ namespace Bai_4___Tính_Đơn_Giá_Của_Một_Mặt_Hàng
         {
             double donGia;
             int soLuong;
-            double thanhTien = 0;
-
+            
             // Nhập Đơn Giá
             Console.Write("Nhập Đơn giá: ");
             donGia = double.Parse(Console.ReadLine());
@@ -17,7 +16,12 @@ namespace Bai_4___Tính_Đơn_Giá_Của_Một_Mặt_Hàng
             // Nhập Số Lượng
             Console.Write("Nhập Số lượng: ");
             soLuong = int.Parse(Console.ReadLine());
-
+                        
+            Console.Write("Thành tiền là: " + TinhThanhTien(donGia, soLuong));
+        }
+        static double TinhThanhTien(double donGia, int soLuong)
+        {
+            double thanhTien = 0;
             // Thành Tiền trước khi giảm giá
             thanhTien = donGia * soLuong;
 
@@ -26,7 +30,7 @@ namespace Bai_4___Tính_Đơn_Giá_Của_Một_Mặt_Hàng
             {
                 thanhTien = thanhTien - thanhTien * 0.03;
             }
-            Console.Write("Thành tiền là: " + thanhTien);
+            return thanhTien;
         }
     }
 }
