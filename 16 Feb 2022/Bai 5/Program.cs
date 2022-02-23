@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bai_6
+namespace Bai_5
 {
     internal class Program
     {
