@@ -12,7 +12,7 @@ Ngày bắt đầu học : 16 Feb 2022
   
     </details>
 
-- [ ] Bài Tập 1: 
+- [x] Bài Tập 1: Thiết kế form thực hiện phép tính +, -, x, / của hai số a, b
 - [ ] Bài Tập 2: 
 - [ ] Bài Tập 3: 
 - [ ] Bài Tập 4: 
