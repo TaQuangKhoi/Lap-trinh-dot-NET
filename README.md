@@ -5,7 +5,8 @@ Ngày bắt đầu học : 16 Feb 2022
 Link file pdf chứa đề và hướng dẫn làm: https://media.bvu.edu.vn//Media/1_BVU_TS/FolderFunc/202202/Documents/bai-1-buoi-1-20220214110829-e.pdf
 
 ## 2 Mar 2022
-- [ ] Bài Tập Mẫu
+- [ ] Bài Tập Mẫu: Thiết kế form sau
+  - ![image](https://user-images.githubusercontent.com/45689286/156395952-5239969c-2dc5-4d46-aa4e-0364d1f9c709.png)
 - [ ] Bài Tập 1: 
 - [ ] Bài Tập 2: 
 - [ ] Bài Tập 3: 
