@@ -7,7 +7,7 @@
     <ProjectGuid>{8D4FD3AD-B60C-4DE7-97C9-589F58549850}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Buoi_3</RootNamespace>
-    <AssemblyName>Buoi_3</AssemblyName>
+    <AssemblyName>Buoi 3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,14 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="K1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="K1.Designer.cs">
+      <DependentUpon>K1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="K2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="K2.Designer.cs">
+      <DependentUpon>K2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="K1.resx">
+      <DependentUpon>K1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
