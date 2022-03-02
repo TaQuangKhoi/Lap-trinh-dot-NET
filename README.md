@@ -2,7 +2,6 @@
 Ngày bắt đầu học : 16 Feb 2022
 
 # Project theo ngày
-Link file pdf chứa đề và hướng dẫn làm: https://media.bvu.edu.vn//Media/1_BVU_TS/FolderFunc/202202/Documents/bai-1-buoi-1-20220214110829-e.pdf
 
 ## 2 Mar 2022
  - [ ] Bài Tập Mẫu: Thiết kế form sau
@@ -19,6 +18,7 @@ Link file pdf chứa đề và hướng dẫn làm: https://media.bvu.edu.vn//Me
 - [ ] Bài Tập 4: 
 
 ## 16 Feb 2022
+Link file pdf chứa đề và hướng dẫn làm: https://media.bvu.edu.vn//Media/1_BVU_TS/FolderFunc/202202/Documents/bai-1-buoi-1-20220214110829-e.pdf
 - [ ] [Bài 1: Kiểm Tra Âm Dương](https://github.com/TaQuangKhoi/Lap-trinh-dot-NET/tree/main/Bai%201)
 - [ ] Bài 2: Tính tích các số từ một đến số n nhập từ bàn phím
 - [ ] Bài 3: Tìm Ước Số Chung Lớn Nhất của 2 số
