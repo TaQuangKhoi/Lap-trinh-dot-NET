@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Bai_tap_1
 {
-    public partial class Form1 : Form
+    public partial class FormCongTruNhanChia : Form
     {
-        public Form1()
+        public FormCongTruNhanChia()
         {
             InitializeComponent();
 

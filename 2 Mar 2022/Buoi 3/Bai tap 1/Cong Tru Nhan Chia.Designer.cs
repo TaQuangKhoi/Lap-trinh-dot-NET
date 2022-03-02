@@ -1,6 +1,6 @@
 ﻿namespace Bai_tap_1
 {
-    partial class Form1
+    partial class FormCongTruNhanChia
     {
         /// <summary>
         /// Required designer variable.
@@ -150,7 +150,7 @@
             // 
             this.errorProviderNumberB.ContainerControl = this;
             // 
-            // Form1
+            // FormCongTruNhanChia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -165,7 +165,7 @@
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lblNumberB);
             this.Controls.Add(this.lblNumberA);
-            this.Name = "Form1";
+            this.Name = "FormCongTruNhanChia";
             this.Text = "Tính Cộng Trừ Nhân Chia";
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderNumberA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderNumberB)).EndInit();
