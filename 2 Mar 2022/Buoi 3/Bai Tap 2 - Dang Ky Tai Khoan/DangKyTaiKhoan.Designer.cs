@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.lblDangKyTaiKhoan = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelTenDangNhap = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelMatKhau = new System.Windows.Forms.Label();
+            this.textBoxTenDangNhap = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxMatKhau = new System.Windows.Forms.TextBox();
+            this.textBoxXNMatKhau = new System.Windows.Forms.TextBox();
+            this.labelXNMatKhau = new System.Windows.Forms.Label();
             this.buttonDangKy = new System.Windows.Forms.Button();
             this.labelStar1 = new System.Windows.Forms.Label();
             this.labelStar2 = new System.Windows.Forms.Label();
@@ -56,73 +56,73 @@
             this.lblDangKyTaiKhoan.Text = "Đăng Ký Tài Khoản";
             this.lblDangKyTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // labelTenDangNhap
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(43, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tên Đăng Nhập";
+            this.labelTenDangNhap.AutoSize = true;
+            this.labelTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTenDangNhap.Location = new System.Drawing.Point(43, 131);
+            this.labelTenDangNhap.Name = "labelTenDangNhap";
+            this.labelTenDangNhap.Size = new System.Drawing.Size(115, 16);
+            this.labelTenDangNhap.TabIndex = 1;
+            this.labelTenDangNhap.Text = "Tên Đăng Nhập";
             // 
-            // label1
+            // labelEmail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(43, 181);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Địa Chỉ Email";
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.Location = new System.Drawing.Point(43, 181);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(99, 16);
+            this.labelEmail.TabIndex = 2;
+            this.labelEmail.Text = "Địa Chỉ Email";
             // 
-            // label3
+            // labelMatKhau
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(43, 231);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Mật Khẩu";
+            this.labelMatKhau.AutoSize = true;
+            this.labelMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMatKhau.Location = new System.Drawing.Point(43, 231);
+            this.labelMatKhau.Name = "labelMatKhau";
+            this.labelMatKhau.Size = new System.Drawing.Size(70, 16);
+            this.labelMatKhau.TabIndex = 3;
+            this.labelMatKhau.Text = "Mật Khẩu";
             // 
-            // textBox1
+            // textBoxTenDangNhap
             // 
-            this.textBox1.Location = new System.Drawing.Point(213, 126);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 4;
+            this.textBoxTenDangNhap.Location = new System.Drawing.Point(213, 126);
+            this.textBoxTenDangNhap.Name = "textBoxTenDangNhap";
+            this.textBoxTenDangNhap.Size = new System.Drawing.Size(200, 20);
+            this.textBoxTenDangNhap.TabIndex = 4;
             // 
-            // textBox2
+            // textBoxEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(213, 176);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 5;
+            this.textBoxEmail.Location = new System.Drawing.Point(213, 176);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(200, 20);
+            this.textBoxEmail.TabIndex = 5;
             // 
-            // textBox3
+            // textBoxMatKhau
             // 
-            this.textBox3.Location = new System.Drawing.Point(213, 226);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 20);
-            this.textBox3.TabIndex = 6;
+            this.textBoxMatKhau.Location = new System.Drawing.Point(213, 226);
+            this.textBoxMatKhau.Name = "textBoxMatKhau";
+            this.textBoxMatKhau.Size = new System.Drawing.Size(200, 20);
+            this.textBoxMatKhau.TabIndex = 6;
             // 
-            // textBox4
+            // textBoxXNMatKhau
             // 
-            this.textBox4.Location = new System.Drawing.Point(213, 276);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 20);
-            this.textBox4.TabIndex = 8;
+            this.textBoxXNMatKhau.Location = new System.Drawing.Point(213, 276);
+            this.textBoxXNMatKhau.Name = "textBoxXNMatKhau";
+            this.textBoxXNMatKhau.Size = new System.Drawing.Size(200, 20);
+            this.textBoxXNMatKhau.TabIndex = 8;
             // 
-            // label4
+            // labelXNMatKhau
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(43, 281);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 16);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Xác Nhận Mật Khẩu";
+            this.labelXNMatKhau.AutoSize = true;
+            this.labelXNMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelXNMatKhau.Location = new System.Drawing.Point(43, 281);
+            this.labelXNMatKhau.Name = "labelXNMatKhau";
+            this.labelXNMatKhau.Size = new System.Drawing.Size(140, 16);
+            this.labelXNMatKhau.TabIndex = 7;
+            this.labelXNMatKhau.Text = "Xác Nhận Mật Khẩu";
             // 
             // buttonDangKy
             // 
@@ -174,14 +174,14 @@
             this.Controls.Add(this.labelStar2);
             this.Controls.Add(this.labelStar1);
             this.Controls.Add(this.buttonDangKy);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBoxXNMatKhau);
+            this.Controls.Add(this.labelXNMatKhau);
+            this.Controls.Add(this.textBoxMatKhau);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxTenDangNhap);
+            this.Controls.Add(this.labelMatKhau);
+            this.Controls.Add(this.labelEmail);
+            this.Controls.Add(this.labelTenDangNhap);
             this.Controls.Add(this.lblDangKyTaiKhoan);
             this.Name = "DangKyTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -194,14 +194,14 @@
         #endregion
 
         private System.Windows.Forms.Label lblDangKyTaiKhoan;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelTenDangNhap;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelMatKhau;
+        private System.Windows.Forms.TextBox textBoxTenDangNhap;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxMatKhau;
+        private System.Windows.Forms.TextBox textBoxXNMatKhau;
+        private System.Windows.Forms.Label labelXNMatKhau;
         private System.Windows.Forms.Button buttonDangKy;
         private System.Windows.Forms.Label labelStar1;
         private System.Windows.Forms.Label labelStar2;
