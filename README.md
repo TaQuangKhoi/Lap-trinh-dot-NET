@@ -4,6 +4,7 @@ Ngày bắt đầu học : 16 Feb 2022
 # Project theo ngày
 
 ## 2 Mar 2022
+Link tới tệp pdf đề bài: https://github.com/TaQuangKhoi/Lap-trinh-dot-NET/blob/main/Buoi_3.pdf
  - [ ] Bài Tập Mẫu: Thiết kế form sau
     <details>
     <summary> Đề bài</summary>
