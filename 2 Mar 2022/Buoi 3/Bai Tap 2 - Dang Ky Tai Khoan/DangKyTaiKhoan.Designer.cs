@@ -133,7 +133,7 @@
             this.buttonDangKy.TabIndex = 9;
             this.buttonDangKy.Text = "Đăng Ký";
             this.buttonDangKy.UseVisualStyleBackColor = true;
-            this.buttonDangKy.Click += new System.EventHandler(this.button1_Click);
+            this.buttonDangKy.Click += new System.EventHandler(this.buttonDangKy_Click);
             // 
             // labelStar1
             // 

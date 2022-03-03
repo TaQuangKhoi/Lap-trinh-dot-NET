@@ -17,7 +17,7 @@ namespace Bai_Tap_2___Dang_Ky_Tai_Khoan
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonDangKy_Click(object sender, EventArgs e)
         {
 
         }
