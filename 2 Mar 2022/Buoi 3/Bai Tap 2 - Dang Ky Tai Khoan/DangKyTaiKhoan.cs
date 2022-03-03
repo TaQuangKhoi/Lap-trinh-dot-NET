@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using KiemTra;
 
 namespace Bai_Tap_2___Dang_Ky_Tai_Khoan
 {
@@ -17,9 +16,10 @@ namespace Bai_Tap_2___Dang_Ky_Tai_Khoan
         {
             InitializeComponent();
         }
+
         private void buttonDangKy_Click(object sender, EventArgs e)
         {
-            KiemTra.Email
+
         }
     }
 }
