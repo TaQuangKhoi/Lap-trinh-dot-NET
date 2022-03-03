@@ -14,7 +14,7 @@ Link tới tệp pdf đề bài: https://github.com/TaQuangKhoi/Lap-trinh-dot-NE
     </details>
 
 - [x] Bài Tập 1: Thiết kế form thực hiện phép tính +, -, x, / của hai số a, b
-- [ ] Bài Tập 2: 
+- [ ] Bài Tập 2: Thiết kế form đăng ký tài khoản
 - [ ] Bài Tập 3: 
 - [ ] Bài Tập 4: 
 
