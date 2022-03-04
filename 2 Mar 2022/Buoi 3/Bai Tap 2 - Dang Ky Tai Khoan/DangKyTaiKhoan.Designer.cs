@@ -32,10 +32,10 @@
             this.labelTenDangNhap = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelMatKhau = new System.Windows.Forms.Label();
-            this.textBoxTenDangNhap = new System.Windows.Forms.TextBox();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.textBoxMatKhau = new System.Windows.Forms.TextBox();
-            this.textBoxXNMatKhau = new System.Windows.Forms.TextBox();
+            this.txtBoxTenDangNhap = new System.Windows.Forms.TextBox();
+            this.txtBoxEmail = new System.Windows.Forms.TextBox();
+            this.txtBoxMatKhau = new System.Windows.Forms.TextBox();
+            this.txtBoxXNMatKhau = new System.Windows.Forms.TextBox();
             this.labelXNMatKhau = new System.Windows.Forms.Label();
             this.buttonDangKy = new System.Windows.Forms.Button();
             this.labelStar1 = new System.Windows.Forms.Label();
@@ -86,33 +86,33 @@
             this.labelMatKhau.TabIndex = 3;
             this.labelMatKhau.Text = "Mật Khẩu";
             // 
-            // textBoxTenDangNhap
+            // txtBoxTenDangNhap
             // 
-            this.textBoxTenDangNhap.Location = new System.Drawing.Point(213, 126);
-            this.textBoxTenDangNhap.Name = "textBoxTenDangNhap";
-            this.textBoxTenDangNhap.Size = new System.Drawing.Size(200, 20);
-            this.textBoxTenDangNhap.TabIndex = 4;
+            this.txtBoxTenDangNhap.Location = new System.Drawing.Point(213, 126);
+            this.txtBoxTenDangNhap.Name = "txtBoxTenDangNhap";
+            this.txtBoxTenDangNhap.Size = new System.Drawing.Size(200, 20);
+            this.txtBoxTenDangNhap.TabIndex = 4;
             // 
-            // textBoxEmail
+            // txtBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(213, 176);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(200, 20);
-            this.textBoxEmail.TabIndex = 5;
+            this.txtBoxEmail.Location = new System.Drawing.Point(213, 176);
+            this.txtBoxEmail.Name = "txtBoxEmail";
+            this.txtBoxEmail.Size = new System.Drawing.Size(200, 20);
+            this.txtBoxEmail.TabIndex = 5;
             // 
-            // textBoxMatKhau
+            // txtBoxMatKhau
             // 
-            this.textBoxMatKhau.Location = new System.Drawing.Point(213, 226);
-            this.textBoxMatKhau.Name = "textBoxMatKhau";
-            this.textBoxMatKhau.Size = new System.Drawing.Size(200, 20);
-            this.textBoxMatKhau.TabIndex = 6;
+            this.txtBoxMatKhau.Location = new System.Drawing.Point(213, 226);
+            this.txtBoxMatKhau.Name = "txtBoxMatKhau";
+            this.txtBoxMatKhau.Size = new System.Drawing.Size(200, 20);
+            this.txtBoxMatKhau.TabIndex = 6;
             // 
-            // textBoxXNMatKhau
+            // txtBoxXNMatKhau
             // 
-            this.textBoxXNMatKhau.Location = new System.Drawing.Point(213, 276);
-            this.textBoxXNMatKhau.Name = "textBoxXNMatKhau";
-            this.textBoxXNMatKhau.Size = new System.Drawing.Size(200, 20);
-            this.textBoxXNMatKhau.TabIndex = 8;
+            this.txtBoxXNMatKhau.Location = new System.Drawing.Point(213, 276);
+            this.txtBoxXNMatKhau.Name = "txtBoxXNMatKhau";
+            this.txtBoxXNMatKhau.Size = new System.Drawing.Size(200, 20);
+            this.txtBoxXNMatKhau.TabIndex = 8;
             // 
             // labelXNMatKhau
             // 
@@ -174,11 +174,11 @@
             this.Controls.Add(this.labelStar2);
             this.Controls.Add(this.labelStar1);
             this.Controls.Add(this.buttonDangKy);
-            this.Controls.Add(this.textBoxXNMatKhau);
+            this.Controls.Add(this.txtBoxXNMatKhau);
             this.Controls.Add(this.labelXNMatKhau);
-            this.Controls.Add(this.textBoxMatKhau);
-            this.Controls.Add(this.textBoxEmail);
-            this.Controls.Add(this.textBoxTenDangNhap);
+            this.Controls.Add(this.txtBoxMatKhau);
+            this.Controls.Add(this.txtBoxEmail);
+            this.Controls.Add(this.txtBoxTenDangNhap);
             this.Controls.Add(this.labelMatKhau);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.labelTenDangNhap);
@@ -197,10 +197,10 @@
         private System.Windows.Forms.Label labelTenDangNhap;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelMatKhau;
-        private System.Windows.Forms.TextBox textBoxTenDangNhap;
-        private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.TextBox textBoxMatKhau;
-        private System.Windows.Forms.TextBox textBoxXNMatKhau;
+        private System.Windows.Forms.TextBox txtBoxTenDangNhap;
+        private System.Windows.Forms.TextBox txtBoxEmail;
+        private System.Windows.Forms.TextBox txtBoxMatKhau;
+        private System.Windows.Forms.TextBox txtBoxXNMatKhau;
         private System.Windows.Forms.Label labelXNMatKhau;
         private System.Windows.Forms.Button buttonDangKy;
         private System.Windows.Forms.Label labelStar1;
