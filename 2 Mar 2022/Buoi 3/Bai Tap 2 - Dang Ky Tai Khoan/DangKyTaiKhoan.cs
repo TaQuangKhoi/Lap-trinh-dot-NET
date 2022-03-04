@@ -19,7 +19,23 @@ namespace Bai_Tap_2___Dang_Ky_Tai_Khoan
 
         private void buttonDangKy_Click(object sender, EventArgs e)
         {
-
+            if(txtBoxTenDangNhap.Text.Equals(""))
+            {
+                MessageBox.Show("Tên đăng nhập không được để trống!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtBoxTenDangNhap.Focus();
+            } else if (txtBoxEmail.Text.Equals(""))
+            {
+                MessageBox.Show("Email không được để trống!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtBoxEmail.Focus();
+            } else if (txtBoxMatKhau.Text.Equals(""))
+            {
+                MessageBox.Show("Mật khẩu không được để trống!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtBoxMatKhau.Focus();
+            } else if (txtBoxXNMatKhau.Text.Equals(""))
+            {
+                MessageBox.Show("Bạn phải xác nhận mật khẩu!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtBoxXNMatKhau.Focus();
+            }
         }
     }
 }
