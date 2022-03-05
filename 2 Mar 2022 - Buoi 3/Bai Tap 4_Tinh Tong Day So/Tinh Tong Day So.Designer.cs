@@ -114,6 +114,7 @@
             this.txtBxNhapSo.Name = "txtBxNhapSo";
             this.txtBxNhapSo.Size = new System.Drawing.Size(150, 20);
             this.txtBxNhapSo.TabIndex = 29;
+            this.txtBxNhapSo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxNhapSo_KeyPress);
             // 
             // lblTongDay
             // 
