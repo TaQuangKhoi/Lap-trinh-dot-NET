@@ -52,7 +52,7 @@
     <Compile Include="DangKyTaiKhoan.Designer.cs">
       <DependentUpon>DangKyTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="KiemTra2.cs" />
+    <Compile Include="KiemTra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DangKyTaiKhoan.resx">
