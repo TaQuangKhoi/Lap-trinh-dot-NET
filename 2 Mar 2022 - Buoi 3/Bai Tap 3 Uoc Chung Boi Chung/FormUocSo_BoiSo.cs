@@ -56,5 +56,9 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
             }
             return result;
         }
+        private int BCNN(int numberA, int numberB)
+        {
+            return numberA * numberB / UCLN(numberA, numberB);
+        }
     }
 }
