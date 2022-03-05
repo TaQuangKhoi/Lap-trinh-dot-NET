@@ -31,6 +31,20 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
                 e.Handled = true;
             }
         }
+        private void buttonThucHien_Click(object sender, EventArgs e)
+        {
+            if (txtBxNhapSoA.Text.Equals(""))
+            {
+                MessageBox.Show("Bạn chưa nhập số a","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }else if (txtBxNhapSoB.Text.Equals(""))
+            {
+                MessageBox.Show("Bạn chưa nhập số b", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            } else { 
+                txtBxUocSo.Text = UCLN(int.Parse(txtBxNhapSoA.Text), int.Parse(txtBxNhapSoB.Text)).ToString();
+                txtBxboiSo.Text = BCNN(int.Parse(txtBxNhapSoA.Text), int.Parse(txtBxNhapSoB.Text)).ToString();
+            }
+        }
         private int UCLN(int numberA, int numberB)
         {
             int result = 0;
