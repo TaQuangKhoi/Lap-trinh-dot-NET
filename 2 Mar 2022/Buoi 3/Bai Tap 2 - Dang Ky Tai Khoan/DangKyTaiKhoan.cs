@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Bai_Tap_2___Dang_Ky_Tai_Khoan;
 
 namespace Bai_Tap_2___Dang_Ky_Tai_Khoan
 {
@@ -35,7 +36,13 @@ namespace Bai_Tap_2___Dang_Ky_Tai_Khoan
             {
                 MessageBox.Show("Bạn phải xác nhận mật khẩu!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtBoxXNMatKhau.Focus();
+            } else if (!KiemTra.Email(txtBoxEmail.Text))
+            {
+                MessageBox.Show("Email vừa nhập không hợp lệ!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtBoxEmail.Focus();
+                
             }
         }
     }
+    
 }
