@@ -16,10 +16,52 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
         {
             InitializeComponent();
         }
+        int Tong = 0;
+        int TongChan = 0;
+        int TongLe = 0;
 
         private void btnNhap_Click(object sender, EventArgs e)
         {
-            txtBxDayVuaNhap.Text = txtBxDayVuaNhap.Text + txtBxNhapSo.Text;
+            if (txtBxNhapSo.Text.Equals(""))
+            {
+                MessageBox.Show("Bạn không được để trống số", "Ê Ê", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            } else if (txtBxDayVuaNhap.Text.Equals(""))
+            {
+                txtBxDayVuaNhap.Text = txtBxNhapSo.Text;
+                TinhTong();
+                txtBxNhapSo.Clear();
+                txtBxNhapSo.Focus();
+            }
+            else
+            {
+                txtBxDayVuaNhap.Text = txtBxDayVuaNhap.Text + " + " + txtBxNhapSo.Text;
+                TinhTong();
+                txtBxNhapSo.Clear();
+                txtBxNhapSo.Focus();
+            }
+        }
+        private void TinhTong()
+        {
+            Tong += int.Parse(txtBxNhapSo.Text);
+            txtBxTongDay.Text = Tong.ToString();
+            if (int.Parse(txtBxNhapSo.Text) % 2 == 0)
+            {
+                TongChan += int.Parse(txtBxNhapSo.Text);
+                txtBxTongChan.Text = TongChan.ToString();
+            }
+            else
+            {
+                TongLe += int.Parse(txtBxNhapSo.Text);
+                txtBxTongLe.Text = TongLe.ToString();
+            }
+        }
+
+        private void txtBxNhapSo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!Char.IsDigit(e.KeyChar) || Char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

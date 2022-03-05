@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai Tap 2_Dang Ky Tai Khoan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai Tap 3_Uoc Chung Boi Chung", "Bai Tap 3 Uoc Chung Boi Chung\Bai Tap 3_Uoc Chung Boi Chung.csproj", "{9C576438-19CB-44C8-8448-C7A897458DC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai Tap 4_Tinh Tong Day So", "Bai Tap 4_Tinh Tong Day So\Bai Tap 4_Tinh Tong Day So.csproj", "{A8B1065B-0E81-4491-BDD7-C14EEFA88190}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9C576438-19CB-44C8-8448-C7A897458DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C576438-19CB-44C8-8448-C7A897458DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C576438-19CB-44C8-8448-C7A897458DC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B1065B-0E81-4491-BDD7-C14EEFA88190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B1065B-0E81-4491-BDD7-C14EEFA88190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B1065B-0E81-4491-BDD7-C14EEFA88190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B1065B-0E81-4491-BDD7-C14EEFA88190}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
