@@ -31,5 +31,30 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
                 e.Handled = true;
             }
         }
+        private int UCLN(int numberA, int numberB)
+        {
+            int result = 0;
+            if (numberA > numberB)
+            {
+                for (int i = numberA; i > 0 ; i--)
+                {
+                    if(numberA % i == 0 && numberB % i == 0)
+                    {
+                        result = i;
+                        break;
+                    }
+                }
+            } else {
+                for (int i = numberB; i > 0 ; i--)
+                {
+                    if (numberB % i == 0 && numberA % i == 0)
+                    {
+                        result = i;
+                        break;
+                    }
+                }
+            }
+            return result;
+        }
     }
 }
