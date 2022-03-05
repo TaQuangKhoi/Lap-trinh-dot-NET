@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonThoat = new System.Windows.Forms.Button();
-            this.buttonTiepTuc = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnTiepTuc = new System.Windows.Forms.Button();
             this.btnNhap = new System.Windows.Forms.Button();
             this.txtBxTongChan = new System.Windows.Forms.TextBox();
             this.lblTongChan = new System.Windows.Forms.Label();
             this.txtBxTongDay = new System.Windows.Forms.TextBox();
             this.txtBxDayVuaNhap = new System.Windows.Forms.TextBox();
-            this.txtBxNhapSoA = new System.Windows.Forms.TextBox();
+            this.txtBxNhapSo = new System.Windows.Forms.TextBox();
             this.lblTongDay = new System.Windows.Forms.Label();
             this.lblDayVuaNhap = new System.Windows.Forms.Label();
             this.lblNhapSo = new System.Windows.Forms.Label();
@@ -44,25 +44,25 @@
             this.lblTongLe = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // buttonThoat
+            // btnThoat
             // 
-            this.buttonThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThoat.Location = new System.Drawing.Point(255, 362);
-            this.buttonThoat.Name = "buttonThoat";
-            this.buttonThoat.Size = new System.Drawing.Size(120, 50);
-            this.buttonThoat.TabIndex = 36;
-            this.buttonThoat.Text = "Thoát";
-            this.buttonThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(255, 362);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(120, 50);
+            this.btnThoat.TabIndex = 36;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
             // 
-            // buttonTiepTuc
+            // btnTiepTuc
             // 
-            this.buttonTiepTuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTiepTuc.Location = new System.Drawing.Point(115, 362);
-            this.buttonTiepTuc.Name = "buttonTiepTuc";
-            this.buttonTiepTuc.Size = new System.Drawing.Size(120, 50);
-            this.buttonTiepTuc.TabIndex = 35;
-            this.buttonTiepTuc.Text = "Tiếp Tục";
-            this.buttonTiepTuc.UseVisualStyleBackColor = true;
+            this.btnTiepTuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTiepTuc.Location = new System.Drawing.Point(115, 362);
+            this.btnTiepTuc.Name = "btnTiepTuc";
+            this.btnTiepTuc.Size = new System.Drawing.Size(120, 50);
+            this.btnTiepTuc.TabIndex = 35;
+            this.btnTiepTuc.Text = "Tiếp Tục";
+            this.btnTiepTuc.UseVisualStyleBackColor = true;
             // 
             // btnNhap
             // 
@@ -108,12 +108,12 @@
             this.txtBxDayVuaNhap.Size = new System.Drawing.Size(275, 20);
             this.txtBxDayVuaNhap.TabIndex = 30;
             // 
-            // txtBxNhapSoA
+            // txtBxNhapSo
             // 
-            this.txtBxNhapSoA.Location = new System.Drawing.Point(167, 145);
-            this.txtBxNhapSoA.Name = "txtBxNhapSoA";
-            this.txtBxNhapSoA.Size = new System.Drawing.Size(150, 20);
-            this.txtBxNhapSoA.TabIndex = 29;
+            this.txtBxNhapSo.Location = new System.Drawing.Point(167, 145);
+            this.txtBxNhapSo.Name = "txtBxNhapSo";
+            this.txtBxNhapSo.Size = new System.Drawing.Size(150, 20);
+            this.txtBxNhapSo.TabIndex = 29;
             // 
             // lblTongDay
             // 
@@ -183,14 +183,14 @@
             this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.txtBxTongLe);
             this.Controls.Add(this.lblTongLe);
-            this.Controls.Add(this.buttonThoat);
-            this.Controls.Add(this.buttonTiepTuc);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnTiepTuc);
             this.Controls.Add(this.btnNhap);
             this.Controls.Add(this.txtBxTongChan);
             this.Controls.Add(this.lblTongChan);
             this.Controls.Add(this.txtBxTongDay);
             this.Controls.Add(this.txtBxDayVuaNhap);
-            this.Controls.Add(this.txtBxNhapSoA);
+            this.Controls.Add(this.txtBxNhapSo);
             this.Controls.Add(this.lblTongDay);
             this.Controls.Add(this.lblDayVuaNhap);
             this.Controls.Add(this.lblNhapSo);
@@ -204,14 +204,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonThoat;
-        private System.Windows.Forms.Button buttonTiepTuc;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnTiepTuc;
         private System.Windows.Forms.Button btnNhap;
         private System.Windows.Forms.TextBox txtBxTongChan;
         private System.Windows.Forms.Label lblTongChan;
         private System.Windows.Forms.TextBox txtBxTongDay;
         private System.Windows.Forms.TextBox txtBxDayVuaNhap;
-        private System.Windows.Forms.TextBox txtBxNhapSoA;
+        private System.Windows.Forms.TextBox txtBxNhapSo;
         private System.Windows.Forms.Label lblTongDay;
         private System.Windows.Forms.Label lblDayVuaNhap;
         private System.Windows.Forms.Label lblNhapSo;

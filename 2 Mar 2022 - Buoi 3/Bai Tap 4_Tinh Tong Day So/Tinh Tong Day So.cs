@@ -19,7 +19,7 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
 
         private void btnNhap_Click(object sender, EventArgs e)
         {
-
+            txtBxDayVuaNhap.Text = txtBxDayVuaNhap.Text + txtBxNhapSo.Text;
         }
     }
 }
