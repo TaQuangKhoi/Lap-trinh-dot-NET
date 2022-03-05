@@ -16,5 +16,10 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
         {
             InitializeComponent();
         }
+
+        private void btnNhap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
