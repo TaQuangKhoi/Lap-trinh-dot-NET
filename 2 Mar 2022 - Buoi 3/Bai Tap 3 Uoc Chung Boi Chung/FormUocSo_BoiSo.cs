@@ -45,6 +45,13 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
                 txtBxboiSo.Text = BCNN(int.Parse(txtBxNhapSoA.Text), int.Parse(txtBxNhapSoB.Text)).ToString();
             }
         }
+        private void buttonTiepTuc_Click(object sender, EventArgs e)
+        {
+            txtBxNhapSoA.Clear();
+            txtBxNhapSoB.Clear();
+            txtBxUocSo.Clear();
+            txtBxboiSo.Clear();
+        }
         private int UCLN(int numberA, int numberB)
         {
             int result = 0;
