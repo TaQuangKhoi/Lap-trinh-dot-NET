@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Bai_Tap_2___Dang_Ky_Tai_Khoan
 {
-    internal class KiemTra2
+    internal class KiemTra
     {
-        public static bool Email(string email)
+        internal static bool Email(string email)
         {
             //Kiểm tra có chứa @ không? 
             if (!email.Contains("@"))
