@@ -5,7 +5,7 @@ Ngày bắt đầu học : 16 Feb 2022
 
 ## 2 Mar 2022
 Link tới tệp pdf đề bài: https://github.com/TaQuangKhoi/Lap-trinh-dot-NET/blob/main/Buoi_3.pdf
- - [ ] Bài Tập Mẫu: Thiết kế form sau
+ - [x] Bài Tập Mẫu: Thiết kế form sau
     <details>
     <summary> Đề bài</summary>
   
@@ -15,8 +15,8 @@ Link tới tệp pdf đề bài: https://github.com/TaQuangKhoi/Lap-trinh-dot-NE
 
 - [x] Bài Tập 1: Thiết kế form thực hiện phép tính +, -, x, / của hai số a, b
 - [x] Bài Tập 2: Thiết kế form đăng ký tài khoản
-- [ ] NOW Bài Tập 3: Thiết kế giao diện thực hiện yêu cầu nhập vào 2 số nguyên dương a và b. Xuất ra ước chung lớn nhất và bội chung nhỏ nhất của 2 số nguyên dương a và b (kiểm tra dữ liệu nhập và xuất các thông báo lỗi nếu có).
-- [ ] Bài Tập 4: 
+- [x] NOW Bài Tập 3: Thiết kế giao diện thực hiện yêu cầu nhập vào 2 số nguyên dương a và b. Xuất ra ước chung lớn nhất và bội chung nhỏ nhất của 2 số nguyên dương a và b (kiểm tra dữ liệu nhập và xuất các thông báo lỗi nếu có).
+- [x] Bài Tập 4: Nhập Dãy số và Tính tổng
 
 ## 16 Feb 2022
 Link file pdf chứa đề và hướng dẫn làm: https://media.bvu.edu.vn//Media/1_BVU_TS/FolderFunc/202202/Documents/bai-1-buoi-1-20220214110829-e.pdf
