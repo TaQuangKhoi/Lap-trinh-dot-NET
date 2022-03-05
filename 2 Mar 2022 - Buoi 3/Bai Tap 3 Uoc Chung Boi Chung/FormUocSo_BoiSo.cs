@@ -16,5 +16,15 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
         {
             InitializeComponent();
         }
+
+        private void txtBxNhapSoA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txtBxNhapSoB_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }

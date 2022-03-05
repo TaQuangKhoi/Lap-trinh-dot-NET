@@ -57,6 +57,7 @@
             this.txtBxboiSo.Location = new System.Drawing.Point(243, 296);
             this.txtBxboiSo.Name = "txtBxboiSo";
             this.txtBxboiSo.PasswordChar = '*';
+            this.txtBxboiSo.ReadOnly = true;
             this.txtBxboiSo.Size = new System.Drawing.Size(200, 20);
             this.txtBxboiSo.TabIndex = 21;
             // 
@@ -75,6 +76,7 @@
             this.txtBxUocSo.Location = new System.Drawing.Point(243, 246);
             this.txtBxUocSo.Name = "txtBxUocSo";
             this.txtBxUocSo.PasswordChar = '*';
+            this.txtBxUocSo.ReadOnly = true;
             this.txtBxUocSo.Size = new System.Drawing.Size(200, 20);
             this.txtBxUocSo.TabIndex = 19;
             // 
@@ -84,6 +86,7 @@
             this.txtBxNhapSoB.Name = "txtBxNhapSoB";
             this.txtBxNhapSoB.Size = new System.Drawing.Size(275, 20);
             this.txtBxNhapSoB.TabIndex = 18;
+            this.txtBxNhapSoB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxNhapSoB_KeyPress);
             // 
             // txtBxNhapSoA
             // 
@@ -91,6 +94,7 @@
             this.txtBxNhapSoA.Name = "txtBxNhapSoA";
             this.txtBxNhapSoA.Size = new System.Drawing.Size(275, 20);
             this.txtBxNhapSoA.TabIndex = 17;
+            this.txtBxNhapSoA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxNhapSoA_KeyPress);
             // 
             // lblUocSo
             // 
