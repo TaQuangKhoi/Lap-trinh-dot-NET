@@ -15,7 +15,7 @@ Link tới tệp pdf đề bài: https://github.com/TaQuangKhoi/Lap-trinh-dot-NE
 
 - [x] Bài Tập 1: Thiết kế form thực hiện phép tính +, -, x, / của hai số a, b
 - [x] Bài Tập 2: Thiết kế form đăng ký tài khoản
-- [x] NOW Bài Tập 3: Thiết kế giao diện thực hiện yêu cầu nhập vào 2 số nguyên dương a và b. Xuất ra ước chung lớn nhất và bội chung nhỏ nhất của 2 số nguyên dương a và b (kiểm tra dữ liệu nhập và xuất các thông báo lỗi nếu có).
+- [x] Bài Tập 3: Thiết kế giao diện thực hiện yêu cầu nhập vào 2 số nguyên dương a và b. Xuất ra ước chung lớn nhất và bội chung nhỏ nhất của 2 số nguyên dương a và b (kiểm tra dữ liệu nhập và xuất các thông báo lỗi nếu có).
 - [x] Bài Tập 4: Nhập Dãy số và Tính tổng
 
 ## 16 Feb 2022
