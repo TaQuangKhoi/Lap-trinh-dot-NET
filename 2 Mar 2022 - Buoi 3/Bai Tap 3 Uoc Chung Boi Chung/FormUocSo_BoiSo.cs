@@ -24,6 +24,7 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
                 e.Handled = true;
             }
         }
+
         private void txtBxNhapSoB_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && (Keys)e.KeyChar != Keys.Back)
@@ -31,6 +32,7 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
                 e.Handled = true;
             }
         }
+
         private void buttonThucHien_Click(object sender, EventArgs e)
         {
             if (txtBxNhapSoA.Text.Equals(""))
@@ -45,6 +47,7 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
                 txtBxboiSo.Text = BCNN(int.Parse(txtBxNhapSoA.Text), int.Parse(txtBxNhapSoB.Text)).ToString();
             }
         }
+
         private void buttonTiepTuc_Click(object sender, EventArgs e)
         {
             txtBxNhapSoA.Clear();
@@ -52,6 +55,15 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
             txtBxUocSo.Clear();
             txtBxboiSo.Clear();
         }
+
+        private void buttonThoat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muôn thoát?", "Khoan Khoan", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                Application.Exit();
+            } else { return; }
+        }
+
         private int UCLN(int numberA, int numberB)
         {
             int result = 0;
