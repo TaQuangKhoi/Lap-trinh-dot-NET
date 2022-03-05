@@ -22,23 +22,7 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
 
         private void btnNhap_Click(object sender, EventArgs e)
         {
-            if (txtBxNhapSo.Text.Equals(""))
-            {
-                MessageBox.Show("Bạn không được để trống số", "Ê Ê", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            } else if (txtBxDayVuaNhap.Text.Equals(""))
-            {
-                txtBxDayVuaNhap.Text = txtBxNhapSo.Text;
-                TinhTong();
-                txtBxNhapSo.Clear();
-                txtBxNhapSo.Focus();
-            }
-            else
-            {
-                txtBxDayVuaNhap.Text = txtBxDayVuaNhap.Text + " + " + txtBxNhapSo.Text;
-                TinhTong();
-                txtBxNhapSo.Clear();
-                txtBxNhapSo.Focus();
-            }
+            Chay();
         }
         private void TinhTong()
         {
@@ -55,12 +39,40 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
                 txtBxTongLe.Text = TongLe.ToString();
             }
         }
-
+        private void Chay()
+        {
+            if (txtBxNhapSo.Text.Equals(""))
+            {
+                MessageBox.Show("Bạn không được để trống số", "Ê Ê", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (txtBxDayVuaNhap.Text.Equals(""))
+            {
+                txtBxDayVuaNhap.Text = txtBxNhapSo.Text;
+                TinhTong();
+                txtBxNhapSo.Clear();
+                txtBxNhapSo.Focus();
+            }
+            else
+            {
+                txtBxDayVuaNhap.Text = txtBxDayVuaNhap.Text + " + " + txtBxNhapSo.Text;
+                TinhTong();
+                txtBxNhapSo.Clear();
+                txtBxNhapSo.Focus();
+            }
+        }
         private void txtBxNhapSo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(!Char.IsDigit(e.KeyChar) || Char.IsWhiteSpace(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void txtBxNhapSo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                Chay();
             }
         }
     }

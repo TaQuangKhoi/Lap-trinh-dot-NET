@@ -105,6 +105,7 @@
             // 
             this.txtBxDayVuaNhap.Location = new System.Drawing.Point(167, 195);
             this.txtBxDayVuaNhap.Name = "txtBxDayVuaNhap";
+            this.txtBxDayVuaNhap.ReadOnly = true;
             this.txtBxDayVuaNhap.Size = new System.Drawing.Size(275, 20);
             this.txtBxDayVuaNhap.TabIndex = 30;
             // 
@@ -114,6 +115,7 @@
             this.txtBxNhapSo.Name = "txtBxNhapSo";
             this.txtBxNhapSo.Size = new System.Drawing.Size(150, 20);
             this.txtBxNhapSo.TabIndex = 29;
+            this.txtBxNhapSo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBxNhapSo_KeyDown);
             this.txtBxNhapSo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxNhapSo_KeyPress);
             // 
             // lblTongDay
