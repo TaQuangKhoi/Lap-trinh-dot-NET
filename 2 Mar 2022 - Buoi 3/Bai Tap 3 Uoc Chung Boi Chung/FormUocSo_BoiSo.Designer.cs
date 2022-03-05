@@ -51,12 +51,12 @@
             this.buttonThucHien.TabIndex = 22;
             this.buttonThucHien.Text = "Thực Hiện";
             this.buttonThucHien.UseVisualStyleBackColor = true;
+            this.buttonThucHien.Click += new System.EventHandler(this.buttonThucHien_Click);
             // 
             // txtBxboiSo
             // 
             this.txtBxboiSo.Location = new System.Drawing.Point(243, 296);
             this.txtBxboiSo.Name = "txtBxboiSo";
-            this.txtBxboiSo.PasswordChar = '*';
             this.txtBxboiSo.ReadOnly = true;
             this.txtBxboiSo.Size = new System.Drawing.Size(200, 20);
             this.txtBxboiSo.TabIndex = 21;
@@ -75,7 +75,6 @@
             // 
             this.txtBxUocSo.Location = new System.Drawing.Point(243, 246);
             this.txtBxUocSo.Name = "txtBxUocSo";
-            this.txtBxUocSo.PasswordChar = '*';
             this.txtBxUocSo.ReadOnly = true;
             this.txtBxUocSo.Size = new System.Drawing.Size(200, 20);
             this.txtBxUocSo.TabIndex = 19;
@@ -148,6 +147,7 @@
             this.buttonTiepTuc.TabIndex = 23;
             this.buttonTiepTuc.Text = "Tiếp Tục";
             this.buttonTiepTuc.UseVisualStyleBackColor = true;
+            this.buttonTiepTuc.Click += new System.EventHandler(this.buttonTiepTuc_Click);
             // 
             // buttonThoat
             // 
@@ -158,6 +158,7 @@
             this.buttonThoat.TabIndex = 24;
             this.buttonThoat.Text = "Thoát";
             this.buttonThoat.UseVisualStyleBackColor = true;
+            this.buttonThoat.Click += new System.EventHandler(this.buttonThoat_Click);
             // 
             // FormUocSoChung_BoiSoChung
             // 
