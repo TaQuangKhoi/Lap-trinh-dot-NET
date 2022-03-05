@@ -19,12 +19,17 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
 
         private void txtBxNhapSoA_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (!Char.IsDigit(e.KeyChar) && (Keys)e.KeyChar != Keys.Back)
+            {
+                e.Handled = true;
+            }
         }
-
         private void txtBxNhapSoB_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (!Char.IsDigit(e.KeyChar) && (Keys)e.KeyChar != Keys.Back)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
