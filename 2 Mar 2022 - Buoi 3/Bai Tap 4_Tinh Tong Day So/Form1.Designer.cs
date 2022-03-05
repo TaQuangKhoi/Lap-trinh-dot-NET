@@ -30,24 +30,24 @@
         {
             this.buttonThoat = new System.Windows.Forms.Button();
             this.buttonTiepTuc = new System.Windows.Forms.Button();
-            this.buttonThucHien = new System.Windows.Forms.Button();
-            this.txtBxboiSo = new System.Windows.Forms.TextBox();
-            this.lblBoiSo = new System.Windows.Forms.Label();
-            this.txtBxUocSo = new System.Windows.Forms.TextBox();
-            this.txtBxNhapSoB = new System.Windows.Forms.TextBox();
+            this.btnNhap = new System.Windows.Forms.Button();
+            this.txtBxTongChan = new System.Windows.Forms.TextBox();
+            this.lblTongChan = new System.Windows.Forms.Label();
+            this.txtBxTongDay = new System.Windows.Forms.TextBox();
+            this.txtBxDayVuaNhap = new System.Windows.Forms.TextBox();
             this.txtBxNhapSoA = new System.Windows.Forms.TextBox();
-            this.lblUocSo = new System.Windows.Forms.Label();
-            this.lblNhapB = new System.Windows.Forms.Label();
-            this.lblNhapA = new System.Windows.Forms.Label();
+            this.lblTongDay = new System.Windows.Forms.Label();
+            this.lblDayVuaNhap = new System.Windows.Forms.Label();
+            this.lblNhapSo = new System.Windows.Forms.Label();
             this.lblUocSoChung_BoiSoChung = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtBxTongLe = new System.Windows.Forms.TextBox();
+            this.lblTongLe = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonThoat
             // 
             this.buttonThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThoat.Location = new System.Drawing.Point(260, 363);
+            this.buttonThoat.Location = new System.Drawing.Point(255, 362);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(120, 50);
             this.buttonThoat.TabIndex = 36;
@@ -57,92 +57,93 @@
             // buttonTiepTuc
             // 
             this.buttonTiepTuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTiepTuc.Location = new System.Drawing.Point(120, 363);
+            this.buttonTiepTuc.Location = new System.Drawing.Point(115, 362);
             this.buttonTiepTuc.Name = "buttonTiepTuc";
             this.buttonTiepTuc.Size = new System.Drawing.Size(120, 50);
             this.buttonTiepTuc.TabIndex = 35;
             this.buttonTiepTuc.Text = "Tiếp Tục";
             this.buttonTiepTuc.UseVisualStyleBackColor = true;
             // 
-            // buttonThucHien
+            // btnNhap
             // 
-            this.buttonThucHien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThucHien.Location = new System.Drawing.Point(327, 136);
-            this.buttonThucHien.Name = "buttonThucHien";
-            this.buttonThucHien.Size = new System.Drawing.Size(120, 40);
-            this.buttonThucHien.TabIndex = 34;
-            this.buttonThucHien.Text = "Nhập";
-            this.buttonThucHien.UseVisualStyleBackColor = true;
+            this.btnNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhap.Location = new System.Drawing.Point(322, 135);
+            this.btnNhap.Name = "btnNhap";
+            this.btnNhap.Size = new System.Drawing.Size(120, 40);
+            this.btnNhap.TabIndex = 34;
+            this.btnNhap.Text = "Nhập";
+            this.btnNhap.UseVisualStyleBackColor = true;
+            this.btnNhap.Click += new System.EventHandler(this.btnNhap_Click);
             // 
-            // txtBxboiSo
+            // txtBxTongChan
             // 
-            this.txtBxboiSo.Location = new System.Drawing.Point(133, 296);
-            this.txtBxboiSo.Name = "txtBxboiSo";
-            this.txtBxboiSo.ReadOnly = true;
-            this.txtBxboiSo.Size = new System.Drawing.Size(100, 20);
-            this.txtBxboiSo.TabIndex = 33;
+            this.txtBxTongChan.Location = new System.Drawing.Point(128, 295);
+            this.txtBxTongChan.Name = "txtBxTongChan";
+            this.txtBxTongChan.ReadOnly = true;
+            this.txtBxTongChan.Size = new System.Drawing.Size(100, 20);
+            this.txtBxTongChan.TabIndex = 33;
             // 
-            // lblBoiSo
+            // lblTongChan
             // 
-            this.lblBoiSo.AutoSize = true;
-            this.lblBoiSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBoiSo.Location = new System.Drawing.Point(45, 300);
-            this.lblBoiSo.Name = "lblBoiSo";
-            this.lblBoiSo.Size = new System.Drawing.Size(82, 16);
-            this.lblBoiSo.TabIndex = 32;
-            this.lblBoiSo.Text = "Tổng Chẵn";
+            this.lblTongChan.AutoSize = true;
+            this.lblTongChan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongChan.Location = new System.Drawing.Point(40, 299);
+            this.lblTongChan.Name = "lblTongChan";
+            this.lblTongChan.Size = new System.Drawing.Size(82, 16);
+            this.lblTongChan.TabIndex = 32;
+            this.lblTongChan.Text = "Tổng Chẵn";
             // 
-            // txtBxUocSo
+            // txtBxTongDay
             // 
-            this.txtBxUocSo.Location = new System.Drawing.Point(297, 246);
-            this.txtBxUocSo.Name = "txtBxUocSo";
-            this.txtBxUocSo.ReadOnly = true;
-            this.txtBxUocSo.Size = new System.Drawing.Size(150, 20);
-            this.txtBxUocSo.TabIndex = 31;
+            this.txtBxTongDay.Location = new System.Drawing.Point(292, 245);
+            this.txtBxTongDay.Name = "txtBxTongDay";
+            this.txtBxTongDay.ReadOnly = true;
+            this.txtBxTongDay.Size = new System.Drawing.Size(150, 20);
+            this.txtBxTongDay.TabIndex = 31;
             // 
-            // txtBxNhapSoB
+            // txtBxDayVuaNhap
             // 
-            this.txtBxNhapSoB.Location = new System.Drawing.Point(172, 196);
-            this.txtBxNhapSoB.Name = "txtBxNhapSoB";
-            this.txtBxNhapSoB.Size = new System.Drawing.Size(275, 20);
-            this.txtBxNhapSoB.TabIndex = 30;
+            this.txtBxDayVuaNhap.Location = new System.Drawing.Point(167, 195);
+            this.txtBxDayVuaNhap.Name = "txtBxDayVuaNhap";
+            this.txtBxDayVuaNhap.Size = new System.Drawing.Size(275, 20);
+            this.txtBxDayVuaNhap.TabIndex = 30;
             // 
             // txtBxNhapSoA
             // 
-            this.txtBxNhapSoA.Location = new System.Drawing.Point(172, 146);
+            this.txtBxNhapSoA.Location = new System.Drawing.Point(167, 145);
             this.txtBxNhapSoA.Name = "txtBxNhapSoA";
             this.txtBxNhapSoA.Size = new System.Drawing.Size(150, 20);
             this.txtBxNhapSoA.TabIndex = 29;
             // 
-            // lblUocSo
+            // lblTongDay
             // 
-            this.lblUocSo.AutoSize = true;
-            this.lblUocSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUocSo.Location = new System.Drawing.Point(45, 250);
-            this.lblUocSo.Name = "lblUocSo";
-            this.lblUocSo.Size = new System.Drawing.Size(195, 16);
-            this.lblUocSo.TabIndex = 28;
-            this.lblUocSo.Text = "Tổng các phần tử trong dãy";
+            this.lblTongDay.AutoSize = true;
+            this.lblTongDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongDay.Location = new System.Drawing.Point(40, 249);
+            this.lblTongDay.Name = "lblTongDay";
+            this.lblTongDay.Size = new System.Drawing.Size(195, 16);
+            this.lblTongDay.TabIndex = 28;
+            this.lblTongDay.Text = "Tổng các phần tử trong dãy";
             // 
-            // lblNhapB
+            // lblDayVuaNhap
             // 
-            this.lblNhapB.AutoSize = true;
-            this.lblNhapB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNhapB.Location = new System.Drawing.Point(45, 200);
-            this.lblNhapB.Name = "lblNhapB";
-            this.lblNhapB.Size = new System.Drawing.Size(102, 16);
-            this.lblNhapB.TabIndex = 27;
-            this.lblNhapB.Text = "Dãy vừa nhập";
+            this.lblDayVuaNhap.AutoSize = true;
+            this.lblDayVuaNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDayVuaNhap.Location = new System.Drawing.Point(40, 199);
+            this.lblDayVuaNhap.Name = "lblDayVuaNhap";
+            this.lblDayVuaNhap.Size = new System.Drawing.Size(102, 16);
+            this.lblDayVuaNhap.TabIndex = 27;
+            this.lblDayVuaNhap.Text = "Dãy vừa nhập";
             // 
-            // lblNhapA
+            // lblNhapSo
             // 
-            this.lblNhapA.AutoSize = true;
-            this.lblNhapA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNhapA.Location = new System.Drawing.Point(45, 150);
-            this.lblNhapA.Name = "lblNhapA";
-            this.lblNhapA.Size = new System.Drawing.Size(65, 16);
-            this.lblNhapA.TabIndex = 26;
-            this.lblNhapA.Text = "Nhập số";
+            this.lblNhapSo.AutoSize = true;
+            this.lblNhapSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNhapSo.Location = new System.Drawing.Point(40, 149);
+            this.lblNhapSo.Name = "lblNhapSo";
+            this.lblNhapSo.Size = new System.Drawing.Size(65, 16);
+            this.lblNhapSo.TabIndex = 26;
+            this.lblNhapSo.Text = "Nhập số";
             // 
             // lblUocSoChung_BoiSoChung
             // 
@@ -157,45 +158,45 @@
             this.lblUocSoChung_BoiSoChung.Text = "Nhập Dãy Số và Tính Tổng";
             this.lblUocSoChung_BoiSoChung.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txtBxTongLe
             // 
-            this.textBox1.Location = new System.Drawing.Point(347, 296);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 38;
+            this.txtBxTongLe.Location = new System.Drawing.Point(342, 295);
+            this.txtBxTongLe.Name = "txtBxTongLe";
+            this.txtBxTongLe.ReadOnly = true;
+            this.txtBxTongLe.Size = new System.Drawing.Size(100, 20);
+            this.txtBxTongLe.TabIndex = 38;
             // 
-            // label1
+            // lblTongLe
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(277, 300);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 16);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "Tổng Lẽ";
+            this.lblTongLe.AutoSize = true;
+            this.lblTongLe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongLe.Location = new System.Drawing.Point(272, 299);
+            this.lblTongLe.Name = "lblTongLe";
+            this.lblTongLe.Size = new System.Drawing.Size(64, 16);
+            this.lblTongLe.TabIndex = 37;
+            this.lblTongLe.Text = "Tổng Lẽ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtBxTongLe);
+            this.Controls.Add(this.lblTongLe);
             this.Controls.Add(this.buttonThoat);
             this.Controls.Add(this.buttonTiepTuc);
-            this.Controls.Add(this.buttonThucHien);
-            this.Controls.Add(this.txtBxboiSo);
-            this.Controls.Add(this.lblBoiSo);
-            this.Controls.Add(this.txtBxUocSo);
-            this.Controls.Add(this.txtBxNhapSoB);
+            this.Controls.Add(this.btnNhap);
+            this.Controls.Add(this.txtBxTongChan);
+            this.Controls.Add(this.lblTongChan);
+            this.Controls.Add(this.txtBxTongDay);
+            this.Controls.Add(this.txtBxDayVuaNhap);
             this.Controls.Add(this.txtBxNhapSoA);
-            this.Controls.Add(this.lblUocSo);
-            this.Controls.Add(this.lblNhapB);
-            this.Controls.Add(this.lblNhapA);
+            this.Controls.Add(this.lblTongDay);
+            this.Controls.Add(this.lblDayVuaNhap);
+            this.Controls.Add(this.lblNhapSo);
             this.Controls.Add(this.lblUocSoChung_BoiSoChung);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Dãy Số và Tính Tổng";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,18 +206,18 @@
 
         private System.Windows.Forms.Button buttonThoat;
         private System.Windows.Forms.Button buttonTiepTuc;
-        private System.Windows.Forms.Button buttonThucHien;
-        private System.Windows.Forms.TextBox txtBxboiSo;
-        private System.Windows.Forms.Label lblBoiSo;
-        private System.Windows.Forms.TextBox txtBxUocSo;
-        private System.Windows.Forms.TextBox txtBxNhapSoB;
+        private System.Windows.Forms.Button btnNhap;
+        private System.Windows.Forms.TextBox txtBxTongChan;
+        private System.Windows.Forms.Label lblTongChan;
+        private System.Windows.Forms.TextBox txtBxTongDay;
+        private System.Windows.Forms.TextBox txtBxDayVuaNhap;
         private System.Windows.Forms.TextBox txtBxNhapSoA;
-        private System.Windows.Forms.Label lblUocSo;
-        private System.Windows.Forms.Label lblNhapB;
-        private System.Windows.Forms.Label lblNhapA;
+        private System.Windows.Forms.Label lblTongDay;
+        private System.Windows.Forms.Label lblDayVuaNhap;
+        private System.Windows.Forms.Label lblNhapSo;
         private System.Windows.Forms.Label lblUocSoChung_BoiSoChung;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBxTongLe;
+        private System.Windows.Forms.Label lblTongLe;
     }
 }
 
