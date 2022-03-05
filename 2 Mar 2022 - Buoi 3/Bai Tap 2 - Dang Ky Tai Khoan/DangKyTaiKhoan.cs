@@ -45,6 +45,12 @@ namespace Bai_Tap_2___Dang_Ky_Tai_Khoan
                 txtBoxMatKhau.Text = "";
                 txtBoxXNMatKhau.Text = "";
                 txtBoxMatKhau.Focus();
+            } else
+            {
+                string mess = "Tên đăng nhập: " + txtBoxTenDangNhap.Text + "\n";
+                mess += "Email: " + txtBoxEmail.Text + "\n";
+                mess += "Password: " + txtBoxMatKhau.Text + "\n";
+                MessageBox.Show(mess, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
