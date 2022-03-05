@@ -17,7 +17,6 @@ namespace Bai_Tap_2___Dang_Ky_Tai_Khoan
         {
             InitializeComponent();
         }
-
         private void buttonDangKy_Click(object sender, EventArgs e)
         {
             if(txtBoxTenDangNhap.Text.Equals(""))
@@ -40,7 +39,12 @@ namespace Bai_Tap_2___Dang_Ky_Tai_Khoan
             {
                 MessageBox.Show("Email vừa nhập không hợp lệ!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtBoxEmail.Focus();
-                
+            } else if (txtBoxMatKhau.Text != txtBoxXNMatKhau.Text)
+            {
+                MessageBox.Show("Mật khẩu xác nhận không khớp!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtBoxMatKhau.Text = "";
+                txtBoxXNMatKhau.Text = "";
+                txtBoxMatKhau.Focus();
             }
         }
     }
