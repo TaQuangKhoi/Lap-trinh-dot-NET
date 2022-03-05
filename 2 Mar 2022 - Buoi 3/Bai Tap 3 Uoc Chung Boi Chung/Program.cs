@@ -16,7 +16,7 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormUocSoChung_BoiSoChung());
         }
     }
 }

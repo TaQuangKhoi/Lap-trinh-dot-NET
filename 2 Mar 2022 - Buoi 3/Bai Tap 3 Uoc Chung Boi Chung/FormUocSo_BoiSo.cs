@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
 {
-    public partial class Form1 : Form
+    public partial class FormUocSoChung_BoiSoChung : Form
     {
-        public Form1()
+        public FormUocSoChung_BoiSoChung()
         {
             InitializeComponent();
         }
