@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.lblYourName = new System.Windows.Forms.Label();
             this.lblYearofBirth = new System.Windows.Forms.Label();
-            this.textBoxYourName = new System.Windows.Forms.TextBox();
-            this.textBoxYearofBirth = new System.Windows.Forms.TextBox();
+            this.txtBxYourName = new System.Windows.Forms.TextBox();
+            this.txtBxYearofBirth = new System.Windows.Forms.TextBox();
             this.btnShow = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
@@ -60,20 +60,20 @@
             this.lblYearofBirth.TabIndex = 1;
             this.lblYearofBirth.Text = "Year of Birth";
             // 
-            // textBoxYourName
+            // txtBxYourName
             // 
-            this.textBoxYourName.Location = new System.Drawing.Point(241, 46);
-            this.textBoxYourName.Name = "textBoxYourName";
-            this.textBoxYourName.Size = new System.Drawing.Size(200, 20);
-            this.textBoxYourName.TabIndex = 1;
-            this.textBoxYourName.Leave += new System.EventHandler(this.textBoxYourName_Leave);
+            this.txtBxYourName.Location = new System.Drawing.Point(241, 46);
+            this.txtBxYourName.Name = "txtBxYourName";
+            this.txtBxYourName.Size = new System.Drawing.Size(200, 20);
+            this.txtBxYourName.TabIndex = 1;
+            this.txtBxYourName.Leave += new System.EventHandler(this.textBoxYourName_Leave);
             // 
-            // textBoxYearofBirth
+            // txtBxYearofBirth
             // 
-            this.textBoxYearofBirth.Location = new System.Drawing.Point(241, 112);
-            this.textBoxYearofBirth.Name = "textBoxYearofBirth";
-            this.textBoxYearofBirth.Size = new System.Drawing.Size(200, 20);
-            this.textBoxYearofBirth.TabIndex = 2;
+            this.txtBxYearofBirth.Location = new System.Drawing.Point(241, 112);
+            this.txtBxYearofBirth.Name = "txtBxYearofBirth";
+            this.txtBxYearofBirth.Size = new System.Drawing.Size(200, 20);
+            this.txtBxYearofBirth.TabIndex = 2;
             // 
             // btnShow
             // 
@@ -117,8 +117,8 @@
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnShow);
-            this.Controls.Add(this.textBoxYearofBirth);
-            this.Controls.Add(this.textBoxYourName);
+            this.Controls.Add(this.txtBxYearofBirth);
+            this.Controls.Add(this.txtBxYourName);
             this.Controls.Add(this.lblYearofBirth);
             this.Controls.Add(this.lblYourName);
             this.Name = "NhapThongTin";
@@ -133,8 +133,8 @@
 
         private System.Windows.Forms.Label lblYourName;
         private System.Windows.Forms.Label lblYearofBirth;
-        private System.Windows.Forms.TextBox textBoxYourName;
-        private System.Windows.Forms.TextBox textBoxYearofBirth;
+        private System.Windows.Forms.TextBox txtBxYourName;
+        private System.Windows.Forms.TextBox txtBxYearofBirth;
         private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button Exit;

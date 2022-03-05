@@ -12,9 +12,11 @@ namespace Bai_Tap_Mau
 {
     public partial class HienThongTin : Form
     {
-        public HienThongTin()
+        public HienThongTin(string Ten, string NamSinh)
         {
             InitializeComponent();
+            lblTen.Text = "Tên: " + Ten;
+            lblNamSinh.Text = "Năm Sinh: " + NamSinh;
         }
     }
 }

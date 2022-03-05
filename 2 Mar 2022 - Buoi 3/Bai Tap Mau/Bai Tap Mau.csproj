@@ -60,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HienThongTin.resx">
+      <DependentUpon>HienThongTin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhapThongTin.resx">
       <DependentUpon>NhapThongTin.cs</DependentUpon>
     </EmbeddedResource>
