@@ -58,7 +58,7 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
 
         private void buttonThoat_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc muôn thoát?", "Khoan Khoan", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Bạn có chắc muốn thoát?", "Khoan Khoan", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 Application.Exit();
             } else { return; }
@@ -69,7 +69,7 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
             int result = 0;
             if (numberA > numberB)
             {
-                for (int i = numberA; i > 0 ; i--)
+                for (int i = numberB; i > 0 ; i--)
                 {
                     if(numberA % i == 0 && numberB % i == 0)
                     {
@@ -78,7 +78,7 @@ namespace Bai_Tap_3_Uoc_Chung_Boi_Chung
                     }
                 }
             } else {
-                for (int i = numberB; i > 0 ; i--)
+                for (int i = numberA; i > 0 ; i--)
                 {
                     if (numberB % i == 0 && numberA % i == 0)
                     {
