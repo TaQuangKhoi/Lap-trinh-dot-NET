@@ -24,10 +24,12 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
         {
             Chay();
         }
-        private void TinhTong()
+        private void TinhTongCongDan() // Cộng Dần Dần Các Số
         {
             Tong += int.Parse(txtBxNhapSo.Text);
             txtBxTongDay.Text = Tong.ToString();
+            
+        }
         private void TinhTongChanLe()
         {
             if (int.Parse(txtBxNhapSo.Text) % 2 == 0)
