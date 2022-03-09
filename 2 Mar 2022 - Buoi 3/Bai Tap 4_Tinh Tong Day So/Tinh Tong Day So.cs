@@ -43,6 +43,14 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
                 txtBxTongLe.Text = TongLe.ToString();
             }
         }
+        private void TinhTongList()
+        {
+            Tong = 0;
+            for (int i = 0; i < DaySo.Count; i++)
+            {
+                Tong+= DaySo[i];
+            }
+            txtBxTongDay.Text = Tong.ToString();
         }
         private void Chay()
         {
