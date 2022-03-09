@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DangNhap", "DangNhap\DangNhap.csproj", "{F1B5165C-E843-41B9-9CB3-58C79BA744C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiMoi", "BaiMoi\BaiMoi.csproj", "{3F37DE8E-3902-46D8-9EF8-456AE0C5700A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lam Lai Uoc So Chung_Boi So Chung", "BaiMoi\Lam Lai Uoc So Chung_Boi So Chung.csproj", "{3F37DE8E-3902-46D8-9EF8-456AE0C5700A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
