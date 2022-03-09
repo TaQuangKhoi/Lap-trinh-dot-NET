@@ -28,6 +28,8 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
         {
             Tong += int.Parse(txtBxNhapSo.Text);
             txtBxTongDay.Text = Tong.ToString();
+        private void TinhTongChanLe()
+        {
             if (int.Parse(txtBxNhapSo.Text) % 2 == 0)
             {
                 TongChan += int.Parse(txtBxNhapSo.Text);
@@ -38,6 +40,7 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
                 TongLe += int.Parse(txtBxNhapSo.Text);
                 txtBxTongLe.Text = TongLe.ToString();
             }
+        }
         }
         private void Chay()
         {
