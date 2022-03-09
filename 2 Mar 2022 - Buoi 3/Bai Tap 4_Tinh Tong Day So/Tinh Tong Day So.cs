@@ -16,9 +16,10 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
         {
             InitializeComponent();
         }
-        int Tong = 0;
+        int Tong;
         int TongChan = 0;
         int TongLe = 0;
+        List<int> DaySo = new List<int>();
 
         private void btnNhap_Click(object sender, EventArgs e)
         {
@@ -60,15 +61,19 @@ namespace Bai_Tap_4_Tinh_Tong_Day_So
             }
             else if (txtBxDayVuaNhap.Text.Equals(""))
             {
-                txtBxDayVuaNhap.Text = txtBxNhapSo.Text;
-                TinhTong();
+                DaySo.Add(int.Parse(txtBxNhapSo.Text));
+                txtBxDayVuaNhap.Text = DaySo[0].ToString();
+                TinhTongList();
+                TinhTongChanLe();
                 txtBxNhapSo.Clear();
                 txtBxNhapSo.Focus();
             }
             else
             {
-                txtBxDayVuaNhap.Text = txtBxDayVuaNhap.Text + " + " + txtBxNhapSo.Text;
-                TinhTong();
+                DaySo.Add(int.Parse(txtBxNhapSo.Text));
+                txtBxDayVuaNhap.AppendText(", " + txtBxNhapSo.Text);
+                TinhTongList();
+                TinhTongChanLe();
                 txtBxNhapSo.Clear();
                 txtBxNhapSo.Focus();
             }
