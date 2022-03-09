@@ -99,10 +99,6 @@ namespace BaiMoi
             {
                 Close();
             }
-            else
-            {
-                return;
-            }
         }
     }
 }
