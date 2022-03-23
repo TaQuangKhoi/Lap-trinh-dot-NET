@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rdKHTN = new System.Windows.Forms.RadioButton();
-            this.rdBK = new System.Windows.Forms.RadioButton();
+            this.rd_DaiHoc_KhoaHocTuNhien = new System.Windows.Forms.RadioButton();
+            this.rd_DaiHoc_BachKhoa = new System.Windows.Forms.RadioButton();
             this.txt_DiemToan = new System.Windows.Forms.TextBox();
             this.label_DiemToan = new System.Windows.Forms.Label();
-            this.rdDHBRVT = new System.Windows.Forms.RadioButton();
+            this.rd_DaiHoc_BRVT = new System.Windows.Forms.RadioButton();
             this.txt_DiemVan = new System.Windows.Forms.TextBox();
             this.label_DiemVan = new System.Windows.Forms.Label();
             this.txt_DiemAnh = new System.Windows.Forms.TextBox();
@@ -43,44 +43,44 @@
             this.labelShowDH3 = new System.Windows.Forms.Label();
             this.gbChonTruong = new System.Windows.Forms.GroupBox();
             this.gbChonNganh = new System.Windows.Forms.GroupBox();
+            this.rdXayDung = new System.Windows.Forms.RadioButton();
             this.rdDuLich = new System.Windows.Forms.RadioButton();
             this.rdCNTT = new System.Windows.Forms.RadioButton();
             this.rdKinhTe = new System.Windows.Forms.RadioButton();
-            this.rdXayDung = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblXetTuyen = new System.Windows.Forms.Label();
             this.gbDiemUuTien = new System.Windows.Forms.GroupBox();
-            this.cbHSGQG = new System.Windows.Forms.CheckBox();
-            this.cbCTBLS = new System.Windows.Forms.CheckBox();
-            this.cbVC = new System.Windows.Forms.CheckBox();
             this.cbDTTS = new System.Windows.Forms.CheckBox();
+            this.cbVC = new System.Windows.Forms.CheckBox();
+            this.cbCTBLS = new System.Windows.Forms.CheckBox();
+            this.cbHSGQG = new System.Windows.Forms.CheckBox();
             this.gbChonTruong.SuspendLayout();
             this.gbChonNganh.SuspendLayout();
             this.gbDiemUuTien.SuspendLayout();
             this.SuspendLayout();
             // 
-            // rdKHTN
+            // rd_DaiHoc_KhoaHocTuNhien
             // 
-            this.rdKHTN.AutoSize = true;
-            this.rdKHTN.Location = new System.Drawing.Point(6, 66);
-            this.rdKHTN.Name = "rdKHTN";
-            this.rdKHTN.Size = new System.Drawing.Size(160, 17);
-            this.rdKHTN.TabIndex = 9;
-            this.rdKHTN.Text = "Đại học Khoa Học Tự Nhiên";
-            this.rdKHTN.UseVisualStyleBackColor = true;
-            this.rdKHTN.CheckedChanged += new System.EventHandler(this.rdKHTN_CheckedChanged);
-            this.rdKHTN.Click += new System.EventHandler(this.rdKHTN_Click);
+            this.rd_DaiHoc_KhoaHocTuNhien.AutoSize = true;
+            this.rd_DaiHoc_KhoaHocTuNhien.Location = new System.Drawing.Point(6, 66);
+            this.rd_DaiHoc_KhoaHocTuNhien.Name = "rd_DaiHoc_KhoaHocTuNhien";
+            this.rd_DaiHoc_KhoaHocTuNhien.Size = new System.Drawing.Size(160, 17);
+            this.rd_DaiHoc_KhoaHocTuNhien.TabIndex = 9;
+            this.rd_DaiHoc_KhoaHocTuNhien.Text = "Đại học Khoa Học Tự Nhiên";
+            this.rd_DaiHoc_KhoaHocTuNhien.UseVisualStyleBackColor = true;
+            this.rd_DaiHoc_KhoaHocTuNhien.CheckedChanged += new System.EventHandler(this.rdKHTN_CheckedChanged);
+            this.rd_DaiHoc_KhoaHocTuNhien.Click += new System.EventHandler(this.rdKHTN_Click);
             // 
-            // rdBK
+            // rd_DaiHoc_BachKhoa
             // 
-            this.rdBK.AutoSize = true;
-            this.rdBK.Location = new System.Drawing.Point(6, 43);
-            this.rdBK.Name = "rdBK";
-            this.rdBK.Size = new System.Drawing.Size(118, 17);
-            this.rdBK.TabIndex = 8;
-            this.rdBK.Text = "Đại học Bách Khoa";
-            this.rdBK.UseVisualStyleBackColor = true;
-            this.rdBK.CheckedChanged += new System.EventHandler(this.rdBK_CheckedChanged);
-            this.rdBK.Click += new System.EventHandler(this.rdBK_Click);
+            this.rd_DaiHoc_BachKhoa.AutoSize = true;
+            this.rd_DaiHoc_BachKhoa.Location = new System.Drawing.Point(6, 43);
+            this.rd_DaiHoc_BachKhoa.Name = "rd_DaiHoc_BachKhoa";
+            this.rd_DaiHoc_BachKhoa.Size = new System.Drawing.Size(118, 17);
+            this.rd_DaiHoc_BachKhoa.TabIndex = 8;
+            this.rd_DaiHoc_BachKhoa.Text = "Đại học Bách Khoa";
+            this.rd_DaiHoc_BachKhoa.UseVisualStyleBackColor = true;
+            this.rd_DaiHoc_BachKhoa.CheckedChanged += new System.EventHandler(this.rdBK_CheckedChanged);
+            this.rd_DaiHoc_BachKhoa.Click += new System.EventHandler(this.rdBK_Click);
             // 
             // txt_DiemToan
             // 
@@ -99,17 +99,17 @@
             this.label_DiemToan.TabIndex = 5;
             this.label_DiemToan.Text = "Điểm toán";
             // 
-            // rdDHBRVT
+            // rd_DaiHoc_BRVT
             // 
-            this.rdDHBRVT.AutoSize = true;
-            this.rdDHBRVT.Location = new System.Drawing.Point(6, 20);
-            this.rdDHBRVT.Name = "rdDHBRVT";
-            this.rdDHBRVT.Size = new System.Drawing.Size(147, 17);
-            this.rdDHBRVT.TabIndex = 7;
-            this.rdDHBRVT.Text = "Đại học Bà Rịa Vũng Tàu";
-            this.rdDHBRVT.UseVisualStyleBackColor = true;
-            this.rdDHBRVT.CheckedChanged += new System.EventHandler(this.rdDHBRVT_CheckedChanged);
-            this.rdDHBRVT.Click += new System.EventHandler(this.rdDHBRVT_Click);
+            this.rd_DaiHoc_BRVT.AutoSize = true;
+            this.rd_DaiHoc_BRVT.Location = new System.Drawing.Point(6, 20);
+            this.rd_DaiHoc_BRVT.Name = "rd_DaiHoc_BRVT";
+            this.rd_DaiHoc_BRVT.Size = new System.Drawing.Size(147, 17);
+            this.rd_DaiHoc_BRVT.TabIndex = 7;
+            this.rd_DaiHoc_BRVT.Text = "Đại học Bà Rịa Vũng Tàu";
+            this.rd_DaiHoc_BRVT.UseVisualStyleBackColor = true;
+            this.rd_DaiHoc_BRVT.CheckedChanged += new System.EventHandler(this.rdDHBRVT_CheckedChanged);
+            this.rd_DaiHoc_BRVT.Click += new System.EventHandler(this.rdDHBRVT_Click);
             // 
             // txt_DiemVan
             // 
@@ -184,10 +184,10 @@
             // 
             // gbChonTruong
             // 
-            this.gbChonTruong.Controls.Add(this.rdBK);
-            this.gbChonTruong.Controls.Add(this.rdDHBRVT);
+            this.gbChonTruong.Controls.Add(this.rd_DaiHoc_BachKhoa);
+            this.gbChonTruong.Controls.Add(this.rd_DaiHoc_BRVT);
             this.gbChonTruong.Controls.Add(this.labelShowDH3);
-            this.gbChonTruong.Controls.Add(this.rdKHTN);
+            this.gbChonTruong.Controls.Add(this.rd_DaiHoc_KhoaHocTuNhien);
             this.gbChonTruong.Controls.Add(this.labelShowDH2);
             this.gbChonTruong.Controls.Add(this.labelShowDH1);
             this.gbChonTruong.Location = new System.Drawing.Point(12, 177);
@@ -209,6 +209,16 @@
             this.gbChonNganh.TabIndex = 19;
             this.gbChonNganh.TabStop = false;
             this.gbChonNganh.Text = "Chọn ngành";
+            // 
+            // rdXayDung
+            // 
+            this.rdXayDung.AutoSize = true;
+            this.rdXayDung.Location = new System.Drawing.Point(6, 89);
+            this.rdXayDung.Name = "rdXayDung";
+            this.rdXayDung.Size = new System.Drawing.Size(70, 17);
+            this.rdXayDung.TabIndex = 10;
+            this.rdXayDung.Text = "Xây dựng";
+            this.rdXayDung.UseVisualStyleBackColor = true;
             // 
             // rdDuLich
             // 
@@ -240,25 +250,15 @@
             this.rdKinhTe.Text = "Kinh tế";
             this.rdKinhTe.UseVisualStyleBackColor = true;
             // 
-            // rdXayDung
+            // lblXetTuyen
             // 
-            this.rdXayDung.AutoSize = true;
-            this.rdXayDung.Location = new System.Drawing.Point(6, 89);
-            this.rdXayDung.Name = "rdXayDung";
-            this.rdXayDung.Size = new System.Drawing.Size(70, 17);
-            this.rdXayDung.TabIndex = 10;
-            this.rdXayDung.Text = "Xây dựng";
-            this.rdXayDung.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(304, 73);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Xét tuyển";
+            this.lblXetTuyen.AutoSize = true;
+            this.lblXetTuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXetTuyen.Location = new System.Drawing.Point(5, 9);
+            this.lblXetTuyen.Name = "lblXetTuyen";
+            this.lblXetTuyen.Size = new System.Drawing.Size(325, 73);
+            this.lblXetTuyen.TabIndex = 20;
+            this.lblXetTuyen.Text = "Xét Tuyển";
             // 
             // gbDiemUuTien
             // 
@@ -273,25 +273,15 @@
             this.gbDiemUuTien.TabStop = false;
             this.gbDiemUuTien.Text = "Điểm ưu tiên";
             // 
-            // cbHSGQG
+            // cbDTTS
             // 
-            this.cbHSGQG.AutoSize = true;
-            this.cbHSGQG.Location = new System.Drawing.Point(6, 20);
-            this.cbHSGQG.Name = "cbHSGQG";
-            this.cbHSGQG.Size = new System.Drawing.Size(131, 17);
-            this.cbHSGQG.TabIndex = 0;
-            this.cbHSGQG.Text = "Học sinh giỏi quốc gia";
-            this.cbHSGQG.UseVisualStyleBackColor = true;
-            // 
-            // cbCTBLS
-            // 
-            this.cbCTBLS.AutoSize = true;
-            this.cbCTBLS.Location = new System.Drawing.Point(6, 43);
-            this.cbCTBLS.Name = "cbCTBLS";
-            this.cbCTBLS.Size = new System.Drawing.Size(133, 17);
-            this.cbCTBLS.TabIndex = 1;
-            this.cbCTBLS.Text = "Con thương binh liệt sĩ";
-            this.cbCTBLS.UseVisualStyleBackColor = true;
+            this.cbDTTS.AutoSize = true;
+            this.cbDTTS.Location = new System.Drawing.Point(6, 89);
+            this.cbDTTS.Name = "cbDTTS";
+            this.cbDTTS.Size = new System.Drawing.Size(104, 17);
+            this.cbDTTS.TabIndex = 3;
+            this.cbDTTS.Text = "Dân tộc thiểu số";
+            this.cbDTTS.UseVisualStyleBackColor = true;
             // 
             // cbVC
             // 
@@ -303,15 +293,25 @@
             this.cbVC.Text = "Vùng cao";
             this.cbVC.UseVisualStyleBackColor = true;
             // 
-            // cbDTTS
+            // cbCTBLS
             // 
-            this.cbDTTS.AutoSize = true;
-            this.cbDTTS.Location = new System.Drawing.Point(6, 89);
-            this.cbDTTS.Name = "cbDTTS";
-            this.cbDTTS.Size = new System.Drawing.Size(104, 17);
-            this.cbDTTS.TabIndex = 3;
-            this.cbDTTS.Text = "Dân tộc thiểu số";
-            this.cbDTTS.UseVisualStyleBackColor = true;
+            this.cbCTBLS.AutoSize = true;
+            this.cbCTBLS.Location = new System.Drawing.Point(6, 43);
+            this.cbCTBLS.Name = "cbCTBLS";
+            this.cbCTBLS.Size = new System.Drawing.Size(133, 17);
+            this.cbCTBLS.TabIndex = 1;
+            this.cbCTBLS.Text = "Con thương binh liệt sĩ";
+            this.cbCTBLS.UseVisualStyleBackColor = true;
+            // 
+            // cbHSGQG
+            // 
+            this.cbHSGQG.AutoSize = true;
+            this.cbHSGQG.Location = new System.Drawing.Point(6, 20);
+            this.cbHSGQG.Name = "cbHSGQG";
+            this.cbHSGQG.Size = new System.Drawing.Size(131, 17);
+            this.cbHSGQG.TabIndex = 0;
+            this.cbHSGQG.Text = "Học sinh giỏi quốc gia";
+            this.cbHSGQG.UseVisualStyleBackColor = true;
             // 
             // fNhap3diem
             // 
@@ -319,7 +319,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 454);
             this.Controls.Add(this.gbDiemUuTien);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblXetTuyen);
             this.Controls.Add(this.gbChonNganh);
             this.Controls.Add(this.gbChonTruong);
             this.Controls.Add(this.btn_XetTuyen);
@@ -345,11 +345,11 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton rdKHTN;
-        private System.Windows.Forms.RadioButton rdBK;
+        private System.Windows.Forms.RadioButton rd_DaiHoc_KhoaHocTuNhien;
+        private System.Windows.Forms.RadioButton rd_DaiHoc_BachKhoa;
         private System.Windows.Forms.TextBox txt_DiemToan;
         private System.Windows.Forms.Label label_DiemToan;
-        private System.Windows.Forms.RadioButton rdDHBRVT;
+        private System.Windows.Forms.RadioButton rd_DaiHoc_BRVT;
         private System.Windows.Forms.TextBox txt_DiemVan;
         private System.Windows.Forms.Label label_DiemVan;
         private System.Windows.Forms.TextBox txt_DiemAnh;
@@ -364,7 +364,7 @@
         private System.Windows.Forms.RadioButton rdDuLich;
         private System.Windows.Forms.RadioButton rdCNTT;
         private System.Windows.Forms.RadioButton rdKinhTe;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblXetTuyen;
         private System.Windows.Forms.GroupBox gbDiemUuTien;
         private System.Windows.Forms.CheckBox cbDTTS;
         private System.Windows.Forms.CheckBox cbVC;

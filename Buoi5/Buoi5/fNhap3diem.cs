@@ -92,31 +92,31 @@ namespace Buoi5
                     }
                     else
                     {
-                        if (rdDHBRVT.Checked == false && rdBK.Checked == false && rdKHTN.Checked == false)
+                        if (rd_DaiHoc_BRVT.Checked == false && rd_DaiHoc_BachKhoa.Checked == false && rd_DaiHoc_KhoaHocTuNhien.Checked == false)
                         {
                             MessageBox.Show("Vui lòng chọn trường", "Thông báo");
                         }
                         else
                         {
-                            if (Tong >= 24 && rdKHTN.Checked == true)
+                            if (Tong >= 24 && rd_DaiHoc_KhoaHocTuNhien.Checked == true)
                             {
                                 if (rdCNTT.Checked == true || rdDuLich.Checked == true || rdKinhTe.Checked == true || rdXayDung.Checked == true)
                                 {
                                     if (rdCNTT.Checked == true)
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdKHTN.Text + " ngành " + rdCNTT.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_KhoaHocTuNhien.Text + " ngành " + rdCNTT.Text, "Thông báo");
                                     }
                                     else if (rdDuLich.Checked == true)
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdKHTN.Text + " ngành " + rdDuLich.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_KhoaHocTuNhien.Text + " ngành " + rdDuLich.Text, "Thông báo");
                                     }
                                     else if (rdKinhTe.Checked == true)
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdKHTN.Text + " ngành " + rdKinhTe.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_KhoaHocTuNhien.Text + " ngành " + rdKinhTe.Text, "Thông báo");
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdKHTN.Text + " ngành " + rdXayDung.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_KhoaHocTuNhien.Text + " ngành " + rdXayDung.Text, "Thông báo");
                                     }
                                 }
                                 else
@@ -124,25 +124,25 @@ namespace Buoi5
                                     MessageBox.Show("Vui lòng chọn ngành", "Thông báo");
                                 }
                             }
-                            else if (Tong >= 22 && rdBK.Checked == true)
+                            else if (Tong >= 22 && rd_DaiHoc_BachKhoa.Checked == true)
                             {
                                 if (rdCNTT.Checked == true || rdDuLich.Checked == true || rdKinhTe.Checked == true || rdXayDung.Checked == true)
                                 {
                                     if (rdCNTT.Checked == true)
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdBK.Text + " ngành " + rdCNTT.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_BachKhoa.Text + " ngành " + rdCNTT.Text, "Thông báo");
                                     }
                                     else if (rdDuLich.Checked == true)
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdBK.Text + " ngành " + rdDuLich.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_BachKhoa.Text + " ngành " + rdDuLich.Text, "Thông báo");
                                     }
                                     else if (rdKinhTe.Checked == true)
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdBK.Text + " ngành " + rdKinhTe.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_BachKhoa.Text + " ngành " + rdKinhTe.Text, "Thông báo");
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdBK.Text + " ngành " + rdXayDung.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_BachKhoa.Text + " ngành " + rdXayDung.Text, "Thông báo");
                                     }
                                 }
                                 else
@@ -150,25 +150,25 @@ namespace Buoi5
                                     MessageBox.Show("Vui lòng chọn ngành", "Thông báo");
                                 }
                             }
-                            else if (Tong >= 18 && rdDHBRVT.Checked == true)
+                            else if (Tong >= 18 && rd_DaiHoc_BRVT.Checked == true)
                             {
                                 if (rdCNTT.Checked == true || rdDuLich.Checked == true || rdKinhTe.Checked == true || rdXayDung.Checked == true)
                                 {
                                     if (rdCNTT.Checked == true)
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdDHBRVT.Text + " ngành " + rdCNTT.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_BRVT.Text + " ngành " + rdCNTT.Text, "Thông báo");
                                     }
                                     else if (rdDuLich.Checked == true)
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdDHBRVT.Text + " ngành " + rdDuLich.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_BRVT.Text + " ngành " + rdDuLich.Text, "Thông báo");
                                     }
                                     else if (rdKinhTe.Checked == true)
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdDHBRVT.Text + " ngành " + rdKinhTe.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_BRVT.Text + " ngành " + rdKinhTe.Text, "Thông báo");
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rdDHBRVT.Text + " ngành " + rdXayDung.Text, "Thông báo");
+                                        MessageBox.Show("Điểm của bạn là: " + Tong + " Bạn đã trúng tuyển " + rd_DaiHoc_BRVT.Text + " ngành " + rdXayDung.Text, "Thông báo");
                                     }
                                 }
                                 else
@@ -193,7 +193,7 @@ namespace Buoi5
 
         private void rdDHBRVT_Click(object sender, EventArgs e)
         {
-            if (rdDHBRVT.Checked == true)
+            if (rd_DaiHoc_BRVT.Checked == true)
             {
                 labelShowDH1.Text = "18";
                 labelShowDH2.Text = "";
@@ -203,7 +203,7 @@ namespace Buoi5
 
         private void rdBK_Click(object sender, EventArgs e)
         {
-            if (rdBK.Checked == true)
+            if (rd_DaiHoc_BachKhoa.Checked == true)
             {
                 labelShowDH2.Text = "22";
                 labelShowDH1.Text = "";
@@ -213,7 +213,7 @@ namespace Buoi5
 
         private void rdKHTN_Click(object sender, EventArgs e)
         {
-            if (rdKHTN.Checked == true)
+            if (rd_DaiHoc_KhoaHocTuNhien.Checked == true)
             {
                 labelShowDH3.Text = "24";
                 labelShowDH1.Text = "";
@@ -223,7 +223,7 @@ namespace Buoi5
 
         private void rdDHBRVT_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdDHBRVT.Checked == true)
+            if (rd_DaiHoc_BRVT.Checked == true)
             {
                 rdCNTT.Enabled = true;
                 rdDuLich.Enabled = true;
@@ -234,7 +234,7 @@ namespace Buoi5
 
         private void rdBK_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdBK.Checked == true)
+            if (rd_DaiHoc_BachKhoa.Checked == true)
             {
                 rdCNTT.Enabled = true;
                 rdDuLich.Enabled = true;
@@ -245,7 +245,7 @@ namespace Buoi5
 
         private void rdKHTN_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdKHTN.Checked == true)
+            if (rd_DaiHoc_KhoaHocTuNhien.Checked == true)
             {
                 rdCNTT.Enabled = true;
                 rdDuLich.Enabled = true;
