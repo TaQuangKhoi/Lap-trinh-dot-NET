@@ -45,7 +45,7 @@
             // lblDiemChuan
             // 
             this.lblDiemChuan.AutoSize = true;
-            this.lblDiemChuan.Location = new System.Drawing.Point(378, 57);
+            this.lblDiemChuan.Location = new System.Drawing.Point(379, 53);
             this.lblDiemChuan.Name = "lblDiemChuan";
             this.lblDiemChuan.Size = new System.Drawing.Size(65, 13);
             this.lblDiemChuan.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             // tBxDiemChuan
             // 
-            this.tBxDiemChuan.Location = new System.Drawing.Point(450, 50);
+            this.tBxDiemChuan.Location = new System.Drawing.Point(450, 51);
             this.tBxDiemChuan.Name = "tBxDiemChuan";
             this.tBxDiemChuan.Size = new System.Drawing.Size(100, 20);
             this.tBxDiemChuan.TabIndex = 2;
