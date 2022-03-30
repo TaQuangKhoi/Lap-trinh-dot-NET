@@ -134,23 +134,47 @@ namespace WindowsFormsApp_ControlBox_ClickBox
                 lBxDanhSachDaChon.Items.Add(lBxDanhSachMonAn.SelectedItem);
                 TongTien = TongTien + Int32.Parse(tBxGiaTien.Text);
                 tBxTongTien.Text = TongTien.ToString();
+                tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
             }
         }
 
         private void btnThemTatCa_Click(object sender, EventArgs e)
         {
             lBxDanhSachDaChon.Items.AddRange(lBxDanhSachMonAn.Items);
+            tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
+            int d = lBxDanhSachMonAn.Items.Count;
+            int soMonTrung = 0;
+            if (cBxChonNhaHang.SelectedIndex == 0)
+            {
+                for (int i = 0; i < d; i++)
+                {
+                    if (KiemTraTrung(lBxDanhSachMonAn.Items[i].ToString()) == true)
+                    {
+                        soMonTrung++;
+                        //MessageBox.Show("Có Sản phẩm đã tồn tại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        lBxDanhSachDaChon.Items.Add(lBxDanhSachMonAn.SelectedItem);
+                        TongTien = TongTien + Int32.Parse(tBxGiaTien.Text);
+                        tBxTongTien.Text = TongTien.ToString();
+                        tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
+                    }
+                }
+            }
             
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
             lBxDanhSachDaChon.Items.Remove(lBxDanhSachDaChon.SelectedItem);
+            tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
 
         }
 
         private void lBxDanhSachMonAn_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Hiện Tên và Giá của món ăn
             if (cBxChonNhaHang.SelectedIndex == 0)
             {
                 tBxTenMonDaChon.Text = lBxDanhSachMonAn.SelectedItem.ToString();
@@ -196,26 +220,48 @@ namespace WindowsFormsApp_ControlBox_ClickBox
                 }
                 if (lBxDanhSachMonAn.SelectedIndex == 1)
                 {
-                    tBxGiaTien.Text = "30";
+                    tBxGiaTien.Text = "14";
                 }
                 if (lBxDanhSachMonAn.SelectedIndex == 2)
                 {
-                    tBxGiaTien.Text = "50";
+                    tBxGiaTien.Text = "250";
                 }
                 if (lBxDanhSachMonAn.SelectedIndex == 3)
                 {
-                    tBxGiaTien.Text = "140";
+                    tBxGiaTien.Text = "50";
+                }
+                if (lBxDanhSachMonAn.SelectedIndex == 4)
+                {
+                    tBxGiaTien.Text = "150";
                 }
             }
             if (cBxChonNhaHang.SelectedIndex == 3)
             {
-
+                tBxTenMonDaChon.Text = lBxDanhSachMonAn.SelectedItem.ToString();
+                if (lBxDanhSachMonAn.SelectedIndex == 0)
+                {
+                    tBxGiaTien.Text = "50";
+                }
+                if (lBxDanhSachMonAn.SelectedIndex == 1)
+                {
+                    tBxGiaTien.Text = "30";
+                }
+                if (lBxDanhSachMonAn.SelectedIndex == 2)
+                {
+                    tBxGiaTien.Text = "500";
+                }
+                if (lBxDanhSachMonAn.SelectedIndex == 3)
+                {
+                    tBxGiaTien.Text = "180";
+                }
             }
         }
 
         private void btnXoaTatCa_Click(object sender, EventArgs e)
         {
             lBxDanhSachDaChon.Items.Clear();
+            tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
+            tBxTongTien.Text = 0;
         }
     }
 }
