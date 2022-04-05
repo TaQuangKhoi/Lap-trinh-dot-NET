@@ -18,6 +18,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
             InitializeComponent();
         }
 
+        // Các Array ở dưới là định lưu trữ dữ liệu của các món của từng nhà hàng
         string[,] HuuNghi = new string[4, 2]
         {
             {"Cơm", "20"},
@@ -50,7 +51,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
             {"Vịt quay", "180" },
         };
 
-
+        // Kiểm Tra Sản Phẩm đã có trong ListBoxDanhSachDaChon chưa?
         public bool KiemTraTrung(string SanPham)
         {
             int i = 0;
@@ -66,44 +67,45 @@ namespace WindowsFormsApp_ControlBox_ClickBox
             return KiemTra;
         }
 
-
+        // Thêm các nhà hàng vào ComboBox khi
         private void PhucVuAmThuc_Load(object sender, EventArgs e)
         {
-            cBxChonNhaHang.Items.Add("Nhà Hàng Hữu Nghị");
-            cBxChonNhaHang.Items.Add("Nhà Hàng Bá Hùng");
-            cBxChonNhaHang.Items.Add("Nhà Hàng Hồ Mây"); 
-            cBxChonNhaHang.Items.Add("Nhà Hàng Lâm Đường"); 
+            coBxChonNhaHang.Items.Add("Nhà Hàng Hữu Nghị");
+            coBxChonNhaHang.Items.Add("Nhà Hàng Bá Hùng");
+            coBxChonNhaHang.Items.Add("Nhà Hàng Hồ Mây");
+            coBxChonNhaHang.Items.Add("Nhà Hàng Lâm Đường");
         }
 
+        // Hiện các món tuỳ theo nhà hàng được chọn
         private void cBxChonNhaHang_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cBxChonNhaHang.SelectedIndex == 0)
+            if (coBxChonNhaHang.SelectedIndex == 0)
             {
-                //Cơm 20, Mì Xào 40, Thịt Kho 50, Vịt nướng 140
+                // Cơm 20, Mì Xào 40, Thịt Kho 50, Vịt nướng 140
                 lBxDanhSachMonAn.Items.Clear();
 
-                MonAn Com = new MonAn("Cơm", 20);
+                // MonAn Com = new MonAn("Cơm", 20);
                 lBxDanhSachMonAn.Items.Add("Cơm");
 
-                MonAn MiXao = new MonAn("Mì Xào", 40);
+                // MonAn MiXao = new MonAn("Mì Xào", 40);
                 lBxDanhSachMonAn.Items.Add("Mì Xào");
 
-                MonAn ThitKho = new MonAn("Thịt kho", 50);
+                // MonAn ThitKho = new MonAn("Thịt kho", 50);
                 lBxDanhSachMonAn.Items.Add("Thịt kho");
 
-                MonAn VitNuong = new MonAn("Vịt nướng", 140);
+                // MonAn VitNuong = new MonAn("Vịt nướng", 140);
                 lBxDanhSachMonAn.Items.Add("Vịt nướng");
 
             }
-            else if (cBxChonNhaHang.SelectedIndex == 1)
+            else if (coBxChonNhaHang.SelectedIndex == 1)
             {
-                //Súp 140, Lẩu 250, Tàu Hủ Chiên 15
+                // Súp 140, Lẩu 250, Tàu Hủ Chiên 15
                 lBxDanhSachMonAn.Items.Clear();
                 lBxDanhSachMonAn.Items.Add("Súp");
                 lBxDanhSachMonAn.Items.Add("Lẩu");
                 lBxDanhSachMonAn.Items.Add("Tàu Hủ Chiên");
             }
-            else if (cBxChonNhaHang.SelectedIndex == 2)
+            else if (coBxChonNhaHang.SelectedIndex == 2)
             {
                 //Gà nướng 130, Nước ngọt 14, Bia 20 / chai - 240 / thùng, Heo quay 300, Nem Nướng 150
                 lBxDanhSachMonAn.Items.Clear();
@@ -113,7 +115,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
                 lBxDanhSachMonAn.Items.Add("Heo quay");
                 lBxDanhSachMonAn.Items.Add("Nai Nướng");
             }
-            else if (cBxChonNhaHang.SelectedIndex == 3)
+            else if (coBxChonNhaHang.SelectedIndex == 3)
             {
                 //Há cảo 50, Bấp Cải 30, Cua 500k / kg, Vịt quay 180
                 lBxDanhSachMonAn.Items.Clear();
@@ -124,9 +126,15 @@ namespace WindowsFormsApp_ControlBox_ClickBox
             }
         }
 
+        // Nút Thêm - Tính Tổng Tiền và Tổng Số Món
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (KiemTraTrung(lBxDanhSachMonAn.SelectedItem.ToString()) == true){
+            if (lBxDanhSachMonAn.SelectedItem == null)
+            {
+                MessageBox.Show("Chưa chọn Sản phẩm", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (KiemTraTrung(lBxDanhSachMonAn.SelectedItem.ToString()) == true)
+            {
                 MessageBox.Show("Sản phẩm đã tồn tại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
@@ -138,28 +146,44 @@ namespace WindowsFormsApp_ControlBox_ClickBox
             }
         }
 
+        // Thêm Tất Cả Các Món Của Nhà Hàng
         private void btnThemTatCa_Click(object sender, EventArgs e)
         {
-            lBxDanhSachDaChon.Items.AddRange(lBxDanhSachMonAn.Items);
-            tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
+            // lBxDanhSachDaChon.Items.AddRange(lBxDanhSachMonAn.Items);
+            // tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
+
             int d = lBxDanhSachMonAn.Items.Count;
-            int soMonTrung = 0;
-            if (cBxChonNhaHang.SelectedIndex == 0)
+            int soMonTrung = 0; //Số món trùng
+
+            for (int i = 0; i < d; i++)
             {
-                for (int i = 0; i < d; i++)
+                if (KiemTraTrung(lBxDanhSachMonAn.Items[i].ToString()) == true)
                 {
-                    if (KiemTraTrung(lBxDanhSachMonAn.Items[i].ToString()) == true)
+                    soMonTrung++;
+                    // MessageBox.Show("Có Sản phẩm đã tồn tại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    // lBxDanhSachDaChon.Items.Add(lBxDanhSachMonAn.SelectedItem);
+                    lBxDanhSachDaChon.Items.Add(lBxDanhSachMonAn.Items[i]);
+                    if (coBxChonNhaHang.SelectedIndex == 0)
                     {
-                        soMonTrung++;
-                        //MessageBox.Show("Có Sản phẩm đã tồn tại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        TongTien = TongTien + Int32.Parse(HuuNghi[i,1]);
                     }
-                    else
+                    else if (coBxChonNhaHang.SelectedIndex == 1)
                     {
-                        lBxDanhSachDaChon.Items.Add(lBxDanhSachMonAn.SelectedItem);
-                        TongTien = TongTien + Int32.Parse(tBxGiaTien.Text);
-                        tBxTongTien.Text = TongTien.ToString();
-                        tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
+                        TongTien = TongTien + Int32.Parse(BaHung[i, 1]);
                     }
+                    else if (coBxChonNhaHang.SelectedIndex == 2)
+                    {
+                        TongTien = TongTien + Int32.Parse(HoMay[i, 1]);
+                    }
+                    else if (coBxChonNhaHang.SelectedIndex == 3)
+                    {
+                        TongTien = TongTien + Int32.Parse(LamDuong[i, 1]);
+                    }
+                    tBxTongTien.Text = TongTien.ToString();
+                    tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
                 }
             }
             
@@ -175,7 +199,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
         private void lBxDanhSachMonAn_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Hiện Tên và Giá của món ăn
-            if (cBxChonNhaHang.SelectedIndex == 0)
+            if (coBxChonNhaHang.SelectedIndex == 0)
             {
                 tBxTenMonDaChon.Text = lBxDanhSachMonAn.SelectedItem.ToString();
                 if (lBxDanhSachMonAn.SelectedIndex == 0)
@@ -195,7 +219,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
                     tBxGiaTien.Text = "140";
                 }
             }
-            if (cBxChonNhaHang.SelectedIndex == 1)
+            if (coBxChonNhaHang.SelectedIndex == 1)
             {
                 tBxTenMonDaChon.Text = lBxDanhSachMonAn.SelectedItem.ToString();
                 if (lBxDanhSachMonAn.SelectedIndex == 0)
@@ -211,7 +235,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
                     tBxGiaTien.Text = "15";
                 }
             }
-            if (cBxChonNhaHang.SelectedIndex == 2)
+            if (coBxChonNhaHang.SelectedIndex == 2)
             {
                 tBxTenMonDaChon.Text = lBxDanhSachMonAn.SelectedItem.ToString();
                 if (lBxDanhSachMonAn.SelectedIndex == 0)
@@ -235,7 +259,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
                     tBxGiaTien.Text = "150";
                 }
             }
-            if (cBxChonNhaHang.SelectedIndex == 3)
+            if (coBxChonNhaHang.SelectedIndex == 3)
             {
                 tBxTenMonDaChon.Text = lBxDanhSachMonAn.SelectedItem.ToString();
                 if (lBxDanhSachMonAn.SelectedIndex == 0)
@@ -261,7 +285,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
         {
             lBxDanhSachDaChon.Items.Clear();
             tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
-            tBxTongTien.Text = 0;
+            tBxTongTien.Text = "";
         }
     }
 }

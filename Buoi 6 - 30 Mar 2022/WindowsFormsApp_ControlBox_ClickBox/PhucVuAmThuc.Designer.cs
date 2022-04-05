@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.cBxChonNhaHang = new System.Windows.Forms.ComboBox();
+            this.coBxChonNhaHang = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lBxDanhSachMonAn = new System.Windows.Forms.ListBox();
@@ -59,14 +59,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Chọn Nhà Hàng";
             // 
-            // cBxChonNhaHang
+            // coBxChonNhaHang
             // 
-            this.cBxChonNhaHang.FormattingEnabled = true;
-            this.cBxChonNhaHang.Location = new System.Drawing.Point(222, 78);
-            this.cBxChonNhaHang.Name = "cBxChonNhaHang";
-            this.cBxChonNhaHang.Size = new System.Drawing.Size(121, 21);
-            this.cBxChonNhaHang.TabIndex = 1;
-            this.cBxChonNhaHang.SelectedIndexChanged += new System.EventHandler(this.cBxChonNhaHang_SelectedIndexChanged);
+            this.coBxChonNhaHang.FormattingEnabled = true;
+            this.coBxChonNhaHang.Location = new System.Drawing.Point(222, 78);
+            this.coBxChonNhaHang.Name = "coBxChonNhaHang";
+            this.coBxChonNhaHang.Size = new System.Drawing.Size(121, 21);
+            this.coBxChonNhaHang.TabIndex = 1;
+            this.coBxChonNhaHang.SelectedIndexChanged += new System.EventHandler(this.cBxChonNhaHang_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -244,7 +244,7 @@
             this.Controls.Add(this.lBxDanhSachMonAn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cBxChonNhaHang);
+            this.Controls.Add(this.coBxChonNhaHang);
             this.Controls.Add(this.label1);
             this.Name = "PhucVuAmThuc";
             this.Text = "PhucVuAmThuc";
@@ -257,7 +257,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cBxChonNhaHang;
+        private System.Windows.Forms.ComboBox coBxChonNhaHang;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox lBxDanhSachMonAn;
