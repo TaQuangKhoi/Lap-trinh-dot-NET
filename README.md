@@ -11,3 +11,5 @@ Ngày bắt đầu học : 16 Feb 2022
 ## Buổi 5
 ## Buổi 6 - 30-Mar-2022 
 [Xem thêm](https://github.com/TaQuangKhoi/Lap-trinh-dot-NET/tree/main/Buoi%206%20-%2030%20Mar%202022#readme)
+## Buổi 7 - 6-Apr-2022 
+[Xem thêm](https://github.com/TaQuangKhoi/Lap-trinh-dot-NET/tree/main/Buoi%207%20-%206%20Apr%202022#readme)
