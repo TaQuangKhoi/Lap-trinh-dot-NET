@@ -24,7 +24,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
             {"Cơm", "20"},
             {"Mì Xào", "40" },
             {"Thịt Kho", "50" },
-            {"Vịt nướng", "140" },
+            {"Vịt nướng", "140" }
         };
         string[,] BaHung = new string[3, 2]
         {
@@ -48,20 +48,53 @@ namespace WindowsFormsApp_ControlBox_ClickBox
             {"Há cảo", "50"},
             {"Bấp Cải", "30" },
             {"Cua", "500" },
-            {"Vịt quay", "180" },
+            {"Vịt quay", "180" }
+        };
+        string[,] TatCa = new string[16, 2]
+        {
+            {"Cơm", "20"},
+            {"Mì Xào", "40" },
+            {"Thịt Kho", "50" },
+            {"Vịt nướng", "140" },
+            {"Súp", "140"},
+            {"Lẩu", "250" },
+            {"Tàu Hủ Chiên ", "15" },
+            {"Gà nướng", "130"},
+            {"Nước ngọt", "14" },
+            {"Bia", "240" },
+            {"Heo quay", "300" },
+            {"Nem Nướng ", "150" },
+            {"Há cảo", "50"},
+            {"Bấp Cải", "30" },
+            {"Cua", "500" },
+            {"Vịt quay", "180" }
         };
 
+
         // Kiểm Tra Sản Phẩm đã có trong ListBoxDanhSachDaChon chưa?
-        public bool KiemTraTrung(string SanPham)
+        public bool KiemTraTrung(string SanPham, ListBox lb)
         {
             int i = 0;
-            int d = lBxDanhSachDaChon.Items.Count;
+            int d = lb.Items.Count;
             bool KiemTra = false;
             for (i = 0; i < d; i++)
             {
-                if (lBxDanhSachDaChon.Items[i].ToString() == SanPham)
+                if (lb.Items[i].ToString() == SanPham)
                 {
                     KiemTra = true;
+                }
+            }
+            return KiemTra;
+        }
+        public bool TimGia(string SanPham, string[,]lb, out int i)
+        {
+            bool KiemTra = false;
+            for (i = 0; i < 16; i++)
+            {
+                if (lb[i,0].ToString() == SanPham)
+                {
+                    KiemTra = true;
+                    break;
                 }
             }
             return KiemTra;
@@ -133,7 +166,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
             {
                 MessageBox.Show("Chưa chọn Sản phẩm", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (KiemTraTrung(lBxDanhSachMonAn.SelectedItem.ToString()) == true)
+            else if (KiemTraTrung(lBxDanhSachMonAn.SelectedItem.ToString(), lBxDanhSachDaChon) == true)
             {
                 MessageBox.Show("Sản phẩm đã tồn tại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -157,7 +190,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
 
             for (int i = 0; i < d; i++)
             {
-                if (KiemTraTrung(lBxDanhSachMonAn.Items[i].ToString()) == true)
+                if (KiemTraTrung(lBxDanhSachMonAn.Items[i].ToString(), lBxDanhSachDaChon) == true)
                 {
                     soMonTrung++;
                     // MessageBox.Show("Có Sản phẩm đã tồn tại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -166,6 +199,7 @@ namespace WindowsFormsApp_ControlBox_ClickBox
                 {
                     // lBxDanhSachDaChon.Items.Add(lBxDanhSachMonAn.SelectedItem);
                     lBxDanhSachDaChon.Items.Add(lBxDanhSachMonAn.Items[i]);
+                    // Tính tổng tiền tuỳ từng nhà hàng đang chọn
                     if (coBxChonNhaHang.SelectedIndex == 0)
                     {
                         TongTien = TongTien + Int32.Parse(HuuNghi[i,1]);
@@ -189,11 +223,22 @@ namespace WindowsFormsApp_ControlBox_ClickBox
             
         }
 
+        // Nút Xoá một món
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            lBxDanhSachDaChon.Items.Remove(lBxDanhSachDaChon.SelectedItem);
-            tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
+            int i;
+            TongTien = TongTien - Int32.Parse(TatCa[0, 1]);
 
+            for (i = 0; i < 16; i++)
+            {
+                if (TatCa[i,0] == lBxDanhSachDaChon.SelectedItems.ToString())
+                {
+                    lBxDanhSachDaChon.Items.Remove(lBxDanhSachDaChon.SelectedItem);
+                    tBxTongSoMon.Text = lBxDanhSachDaChon.Items.Count.ToString();
+                    tBxTongTien.Text = TongTien.ToString();
+                    break;
+                }
+            }
         }
 
         private void lBxDanhSachMonAn_SelectedIndexChanged(object sender, EventArgs e)
