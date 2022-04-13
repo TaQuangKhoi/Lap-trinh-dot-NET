@@ -31,6 +31,12 @@
           <AssociatedConnUserName />
           <FullPath>Insert.sql</FullPath>
         </FileNode>
+        <FileNode Name="Query.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Query.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">

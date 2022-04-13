@@ -69,7 +69,7 @@
             this.Khoa.Name = "Khoa";
             this.Khoa.Size = new System.Drawing.Size(180, 22);
             this.Khoa.Text = "Khoa";
-            this.Khoa.Click += new System.EventHandler(this.khoaToolStripMenuItem_Click);
+            this.Khoa.Click += new System.EventHandler(this.Khoa_Click);
             // 
             // Lop
             // 
