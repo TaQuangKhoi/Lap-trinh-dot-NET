@@ -42,14 +42,6 @@ namespace Buoi_8
             {
                 conn.Open();
             }
-            /*
-            if (conn.State == ConnectionState.Open)
-            {
-               
-                MessageBox.Show("da the ket noi");
-            }
-            */
-
         }
 
         private void btnThem_Click(object sender, EventArgs e)
