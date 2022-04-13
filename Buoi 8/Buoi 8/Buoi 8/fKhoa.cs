@@ -17,7 +17,12 @@ namespace Buoi_8
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void fKhoa_SizeChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void fKhoa_Load(object sender, EventArgs e)
         {
 
         }
