@@ -19,17 +19,17 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="Create.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create.sql</FullPath>
+        </FileNode>
         <FileNode Name="Insert.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Insert.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery1.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-AN8O8G6\TQK:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-AN8O8G6\TQK</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
