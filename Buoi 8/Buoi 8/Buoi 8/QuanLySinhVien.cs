@@ -14,6 +14,8 @@ namespace Buoi_8
     public partial class QuanLySinhVien : Form
     {
         Form fKhoa = new fKhoa();
+        Form fLop = new fLop();
+        Form fSinhVien = new fSinhVien();
         public QuanLySinhVien()
         {
             InitializeComponent();
@@ -43,6 +45,16 @@ namespace Buoi_8
         private void QuanLySinhVien_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void Lop_Click(object sender, EventArgs e)
+        {
+            OpenForm(fLop);
+        }
+
+        private void SinhVien_Click(object sender, EventArgs e)
+        {
+            OpenForm(fSinhVien);
         }
     }
 }

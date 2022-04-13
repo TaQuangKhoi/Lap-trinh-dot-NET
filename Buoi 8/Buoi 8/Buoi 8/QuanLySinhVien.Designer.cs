@@ -33,8 +33,8 @@
             this.Khoa = new System.Windows.Forms.ToolStripMenuItem();
             this.Lop = new System.Windows.Forms.ToolStripMenuItem();
             this.SinhVien = new System.Windows.Forms.ToolStripMenuItem();
-            this.Diem = new System.Windows.Forms.ToolStripMenuItem();
             this.MonHoc = new System.Windows.Forms.ToolStripMenuItem();
+            this.Diem = new System.Windows.Forms.ToolStripMenuItem();
             this.BaoCaoThongKe = new System.Windows.Forms.ToolStripMenuItem();
             this.TroGiup = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -76,24 +76,26 @@
             this.Lop.Name = "Lop";
             this.Lop.Size = new System.Drawing.Size(180, 22);
             this.Lop.Text = "Lớp";
+            this.Lop.Click += new System.EventHandler(this.Lop_Click);
             // 
             // SinhVien
             // 
             this.SinhVien.Name = "SinhVien";
             this.SinhVien.Size = new System.Drawing.Size(180, 22);
             this.SinhVien.Text = "Sinh Viên";
-            // 
-            // Diem
-            // 
-            this.Diem.Name = "Diem";
-            this.Diem.Size = new System.Drawing.Size(180, 22);
-            this.Diem.Text = "Điểm";
+            this.SinhVien.Click += new System.EventHandler(this.SinhVien_Click);
             // 
             // MonHoc
             // 
             this.MonHoc.Name = "MonHoc";
             this.MonHoc.Size = new System.Drawing.Size(180, 22);
             this.MonHoc.Text = "Môn Học";
+            // 
+            // Diem
+            // 
+            this.Diem.Name = "Diem";
+            this.Diem.Size = new System.Drawing.Size(180, 22);
+            this.Diem.Text = "Điểm";
             // 
             // BaoCaoThongKe
             // 
