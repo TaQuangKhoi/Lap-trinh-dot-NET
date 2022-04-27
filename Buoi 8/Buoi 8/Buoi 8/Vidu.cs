@@ -21,6 +21,8 @@ namespace Buoi_8
         SqlDataAdapter adapter;
         string connStr = @"Data Source = .\TQK; Initial Catalog=QLSVDN;Integrated Security=True";
         DataSet dsLop = new DataSet();
+        string strSqlLop = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa";
+
 
         private void Vidu_Load(object sender, EventArgs e)
         {
@@ -39,8 +41,6 @@ namespace Buoi_8
             cbbKhoa.DisplayMember = "TenKhoa";
             cbbKhoa.ValueMember = "MaKhoa";
 
-            string strSqlLop = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa";
-
             adapter = new SqlDataAdapter(strSqlLop, conn);
             adapter.Fill(dsLop, "LOP"); // Đặt tên cho bảng là LOP
             dgvLop.DataSource = dsLop.Tables[0];
@@ -55,7 +55,6 @@ namespace Buoi_8
                 conn.Open();
             }
 
-            string strSqlLop = "SELECT MaLop, TenLop FROM LOP";
             dsLop.Clear();
             adapter = new SqlDataAdapter(strSqlLop, conn);
             adapter.Fill(dsLop, "LOP"); // Đặt tên cho bảng là LOP
