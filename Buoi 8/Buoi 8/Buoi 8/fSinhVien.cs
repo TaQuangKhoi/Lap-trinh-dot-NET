@@ -36,5 +36,31 @@ namespace Buoi_8
                 conn.Open();
             }
         }
+
+        private void btnHienLuoi_Click(object sender, EventArgs e)
+        {
+            lvSV.Items.Clear();
+            int i = 0;
+            string query = "SELECT * FROM KHOA";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader table;
+            table = cmd.ExecuteReader(); // ExecuteReader() trả về một bảng dữ liệu
+            while (table.Read())
+            {
+                lvSV.Items.Add(table["MaKhoa"].ToString());
+                lvSV.Items[i].SubItems.Add(table["TenKhoa"].ToString());
+                i++;
+            }
+            table.Close();
+        }
+
+        private void btnHien_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT COUNT(*) FROM KHOA";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int TongSoKhoa = (int)cmd.ExecuteScalar();
+            // ExecuteScalar() trả về giá trị ô đầu tiên của dòng đầu tiên của bảng SELECT
+            txbTongSoSV.Text = TongSoKhoa.ToString();
+        }
     }
 }

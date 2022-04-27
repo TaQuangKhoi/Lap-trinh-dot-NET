@@ -15,13 +15,11 @@ namespace Buoi_8
     {
         Form fKhoa = new fKhoa();
         Form fLop = new fLop();
-        Form fSinhVien = new fSinhVien();
         public QuanLySinhVien()
         {
             InitializeComponent();
             this.IsMdiContainer = true;
         }
-
 
         private void Khoa_Click(object sender, EventArgs e)
         {
@@ -54,7 +52,14 @@ namespace Buoi_8
 
         private void SinhVien_Click(object sender, EventArgs e)
         {
+            Form fSinhVien = new fSinhVien();
             OpenForm(fSinhVien);
+        }
+
+        private void họcSqlDataAdapterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form Vidu = new Vidu();
+            OpenForm(Vidu);
         }
     }
 }

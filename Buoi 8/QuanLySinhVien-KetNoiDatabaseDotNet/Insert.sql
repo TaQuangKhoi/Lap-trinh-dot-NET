@@ -17,15 +17,6 @@ INSERT SINHVIEN
 VALUES
 ('20035435', N'T? Quang Khôi', '20020827','20CT')
 
--- UPDATE
-UPDATE KHOA
-SET TenKhoa = 'Khoa hoc may tinh'
-WHERE MaKhoa = 'CNTT' --Teacher ask name is Cong nghe thong tin or Khoa hoc may tinh
-
--- DELETE
-DELETE FROM KHOA WHERE MaKhoa = 'NNXH'
-
---13:34 
 INSERT KHOA
 VALUES
 ('CNTP', 'Khoa Cong nghe thuc pham')
