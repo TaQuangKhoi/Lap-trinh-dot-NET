@@ -13,19 +13,18 @@ namespace Buoi_8
 {
     public partial class Vidu : Form
     {
-        public Vidu()
-        {
-            InitializeComponent();
-        }
         SqlConnection conn;
         SqlDataAdapter adapter;
         string connStr = @"Data Source = .\TQK; Initial Catalog=QLSVDN;Integrated Security=True";
         DataSet dsLop = new DataSet();
-        string strSqlLop = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa";
-
-
-        private void Vidu_Load(object sender, EventArgs e)
+        DataColumn[] Key = new DataColumn[1]; // Tạo một mảng Key là mảng một chiều Cột
+        string strSqlLop = "SELECT * FROM LOP";
+        string strSqlKhoa = "SELECT * FROM KHOA";
+        string strSqlLopKhoa = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa";
+        
+        public Vidu()
         {
+            InitializeComponent();
             conn = new SqlConnection(connStr);
 
             if (conn.State == ConnectionState.Closed)
@@ -33,16 +32,32 @@ namespace Buoi_8
                 conn.Open();
             }
 
-            string strSqlKhoa = "SELECT * FROM KHOA";
+            adapter = new SqlDataAdapter(strSqlLop, conn);
+            adapter.Fill(dsLop, "LOP"); // Đặt tên cho bảng là LOP
+
+            Key[0] = dsLop.Tables[0].Columns[0]; // Gán cột thứ nhất (MaKHoa) cho mảng Key[]
+            dsLop.Tables[0].PrimaryKey = Key; // Gán PrimaryKey của DataSet là mảng Key[] 
+        }
+       
+
+
+        private void Vidu_Load(object sender, EventArgs e)
+        {
+           
+
             adapter = new SqlDataAdapter(strSqlKhoa, conn);
+            
+
             DataSet ds = new DataSet();
             adapter.Fill(ds, "KHOA"); //Đặt tên cho bảng là KHOA
+
+            
             cbbKhoa.DataSource = ds.Tables[0];
             cbbKhoa.DisplayMember = "TenKhoa";
             cbbKhoa.ValueMember = "MaKhoa";
 
-            adapter = new SqlDataAdapter(strSqlLop, conn);
-            adapter.Fill(dsLop, "LOP"); // Đặt tên cho bảng là LOP
+           
+           
             dgvLop.DataSource = dsLop.Tables[0];
         }
 
@@ -77,16 +92,32 @@ namespace Buoi_8
             int dem = e.RowIndex;
             txbMaLop.Text = dgvLop.Rows[dem].Cells[0].Value.ToString();
             txbTenLop.Text = dgvLop.Rows[dem].Cells[1].Value.ToString();
-            cbbKhoa.Text = dgvLop.Rows[dem].Cells[2].Value.ToString();
+            //cbbKhoa.Text = dgvLop.Rows[dem].Cells[2].Value.ToString();
         }
 
         private void cbbKhoa_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             dsLop.Clear();
             string strSqlLopTheoKhoa = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa AND K.TenKhoa = '" + cbbKhoa.Text + "'";
-            adapter = new SqlDataAdapter(strSqlLopTheoKhoa, conn);
+            adapter = new SqlDataAdapter(strSqlLop, conn);
             adapter.Fill(dsLop, "LOP"); // Đặt tên cho bảng là LOP
             dgvLop.DataSource = dsLop.Tables[0];
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DataRow dr = dsLop.Tables[0].Rows.Find(txbMaLop.Text); // Hàm Find chỉ tìm kiếm khóa chính, nên phải set khóa chính cho DataSet
+            if (dr != null)
+            {
+                dr.Delete();
+            }
+            SqlCommandBuilder sqlCB = new SqlCommandBuilder(adapter);
+            adapter.Update(dsLop, "LOP");
         }
     }
 }

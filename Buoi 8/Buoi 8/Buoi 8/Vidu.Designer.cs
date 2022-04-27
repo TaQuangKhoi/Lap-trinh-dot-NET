@@ -36,13 +36,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txbMaLop = new System.Windows.Forms.TextBox();
             this.txbTenLop = new System.Windows.Forms.TextBox();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLop)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 108);
+            this.label1.Location = new System.Drawing.Point(45, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 0;
@@ -51,7 +54,7 @@
             // cbbKhoa
             // 
             this.cbbKhoa.FormattingEnabled = true;
-            this.cbbKhoa.Location = new System.Drawing.Point(97, 108);
+            this.cbbKhoa.Location = new System.Drawing.Point(97, 119);
             this.cbbKhoa.Name = "cbbKhoa";
             this.cbbKhoa.Size = new System.Drawing.Size(195, 21);
             this.cbbKhoa.TabIndex = 1;
@@ -70,9 +73,9 @@
             // 
             // btnHien
             // 
-            this.btnHien.Location = new System.Drawing.Point(45, 177);
+            this.btnHien.Location = new System.Drawing.Point(45, 162);
             this.btnHien.Name = "btnHien";
-            this.btnHien.Size = new System.Drawing.Size(75, 23);
+            this.btnHien.Size = new System.Drawing.Size(75, 38);
             this.btnHien.TabIndex = 3;
             this.btnHien.Text = "Tất Cả";
             this.btnHien.UseVisualStyleBackColor = true;
@@ -90,7 +93,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(45, 66);
+            this.label3.Location = new System.Drawing.Point(45, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 5;
@@ -105,16 +108,48 @@
             // 
             // txbTenLop
             // 
-            this.txbTenLop.Location = new System.Drawing.Point(97, 63);
+            this.txbTenLop.Location = new System.Drawing.Point(97, 74);
             this.txbTenLop.Name = "txbTenLop";
             this.txbTenLop.Size = new System.Drawing.Size(195, 20);
             this.txbTenLop.TabIndex = 7;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(374, 29);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(108, 39);
+            this.btnThem.TabIndex = 8;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(374, 74);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(108, 39);
+            this.btnXoa.TabIndex = 9;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(374, 119);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(108, 39);
+            this.btnSua.TabIndex = 10;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // Vidu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(687, 510);
+            this.ClientSize = new System.Drawing.Size(538, 388);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.txbTenLop);
             this.Controls.Add(this.txbMaLop);
             this.Controls.Add(this.label3);
@@ -142,5 +177,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txbMaLop;
         private System.Windows.Forms.TextBox txbTenLop;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
     }
 }
