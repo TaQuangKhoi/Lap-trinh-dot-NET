@@ -17,6 +17,8 @@ namespace Buoi_8
         SqlDataAdapter adapter;
         string connStr = @"Data Source = .\TQK; Initial Catalog=QLSVDN;Integrated Security=True";
         DataSet dsLop = new DataSet();
+        DataSet dsKhoa = new DataSet();
+        DataSet dsLopKhoa = new DataSet();
         DataColumn[] Key = new DataColumn[1]; // Tạo một mảng Key là mảng một chiều Cột
         string strSqlLop = "SELECT * FROM LOP";
         string strSqlKhoa = "SELECT * FROM KHOA";
@@ -38,26 +40,19 @@ namespace Buoi_8
             Key[0] = dsLop.Tables[0].Columns[0]; // Gán cột thứ nhất (MaKHoa) cho mảng Key[]
             dsLop.Tables[0].PrimaryKey = Key; // Gán PrimaryKey của DataSet là mảng Key[] 
         }
-       
-
 
         private void Vidu_Load(object sender, EventArgs e)
         {
-           
-
             adapter = new SqlDataAdapter(strSqlKhoa, conn);
-            
 
-            DataSet ds = new DataSet();
-            adapter.Fill(ds, "KHOA"); //Đặt tên cho bảng là KHOA
-
+            adapter.Fill(dsKhoa, "KHOA"); //Đặt tên cho bảng là KHOA
             
-            cbbKhoa.DataSource = ds.Tables[0];
+            cbbKhoa.DataSource = dsKhoa.Tables[0];
             cbbKhoa.DisplayMember = "TenKhoa";
             cbbKhoa.ValueMember = "MaKhoa";
-
-           
-           
+            
+            adapter = new SqlDataAdapter(strSqlLop, conn);
+            adapter.Fill(dsLop, "LOP"); // Đặt tên cho bảng là LOP
             dgvLop.DataSource = dsLop.Tables[0];
         }
 
@@ -99,9 +94,9 @@ namespace Buoi_8
         {
             dsLop.Clear();
             string strSqlLopTheoKhoa = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa AND K.TenKhoa = '" + cbbKhoa.Text + "'";
-            adapter = new SqlDataAdapter(strSqlLop, conn);
-            adapter.Fill(dsLop, "LOP"); // Đặt tên cho bảng là LOP
-            dgvLop.DataSource = dsLop.Tables[0];
+            adapter = new SqlDataAdapter(strSqlLopTheoKhoa, conn);
+            adapter.Fill(dsLopKhoa, "LOP"); // Đặt tên cho bảng là LOP
+            dgvLop.DataSource = dsLopKhoa.Tables[0];
         }
 
         private void btnSua_Click(object sender, EventArgs e)
