@@ -23,7 +23,7 @@ namespace Buoi_8
         string strSqlLop = "SELECT * FROM LOP";
         string strSqlKhoa = "SELECT * FROM KHOA";
         string strSqlLopKhoa = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa";
-        
+
         public Vidu()
         {
             InitializeComponent();
@@ -93,7 +93,7 @@ namespace Buoi_8
         private void cbbKhoa_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             dsLop.Clear();
-            string strSqlLopTheoKhoa = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa AND K.TenKhoa = '" + cbbKhoa.Text + "'";
+            string strSqlLopTheoKhoa = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa AND K.MaKhoa = '" + cbbKhoa.SelectedValue + "'";
             adapter = new SqlDataAdapter(strSqlLopTheoKhoa, conn);
             adapter.Fill(dsLopKhoa, "LOP"); // Đặt tên cho bảng là LOP
             dgvLop.DataSource = dsLopKhoa.Tables[0];
@@ -101,7 +101,14 @@ namespace Buoi_8
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-
+            DataRow dr = dsLop.Tables[0].Rows.Find(txbMaLop.Text); // Hàm Find chỉ tìm kiếm khóa chính, nên phải set khóa chính cho DataSet
+            if (dr != null)
+            {
+                dr["TenLop"] = txbTenLop.Text;
+            }
+            SqlCommandBuilder sqlCB = new SqlCommandBuilder(adapter);
+            adapter.Update(dsLop, "LOP");
+            dgvLop.DataSource = dsLop.Tables[0]; // Refresh DataGridView
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -111,6 +118,18 @@ namespace Buoi_8
             {
                 dr.Delete();
             }
+            SqlCommandBuilder sqlCB = new SqlCommandBuilder(adapter);
+            adapter.Update(dsLop, "LOP"); // Chỉ hoạt động với DataSet lấy dữ liệu từ 1 bảng
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            DataRow drNew = dsLop.Tables[0].NewRow();
+            drNew["MaLop"] = txbMaLop.Text;
+            drNew["TenLop"] = txbTenLop.Text;
+            drNew["MaKhoa"] = cbbKhoa.SelectedValue.ToString();
+            dsLop.Tables[0].Rows.Add(drNew);
+
             SqlCommandBuilder sqlCB = new SqlCommandBuilder(adapter);
             adapter.Update(dsLop, "LOP");
         }

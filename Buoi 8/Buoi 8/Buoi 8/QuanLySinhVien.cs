@@ -61,5 +61,11 @@ namespace Buoi_8
             Form Vidu = new Vidu();
             OpenForm(Vidu);
         }
+
+        private void báoCáoSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form BC = new FormBaoCao();
+            OpenForm(BC);
+        }
     }
 }

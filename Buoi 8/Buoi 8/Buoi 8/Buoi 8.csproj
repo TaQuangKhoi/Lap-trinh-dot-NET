@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCaoSinhVien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoSinhVien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="fKhoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +70,12 @@
     </Compile>
     <Compile Include="fLop.Designer.cs">
       <DependentUpon>fLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaoCao.Designer.cs">
+      <DependentUpon>FormBaoCao.cs</DependentUpon>
     </Compile>
     <Compile Include="fSinhVien.cs">
       <SubType>Form</SubType>
@@ -79,11 +98,18 @@
     <Compile Include="Vidu.Designer.cs">
       <DependentUpon>Vidu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BaoCaoSinhVien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoSinhVien.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="fKhoa.resx">
       <DependentUpon>fKhoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLop.resx">
       <DependentUpon>fLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaoCao.resx">
+      <DependentUpon>FormBaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSinhVien.resx">
       <DependentUpon>fSinhVien.cs</DependentUpon>
@@ -115,6 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
