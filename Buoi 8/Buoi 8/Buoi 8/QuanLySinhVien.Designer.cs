@@ -39,8 +39,9 @@
             this.TroGiup = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.víDụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tổngSốKhoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.họcSqlDataAdapterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tổngSốKhoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.báoCáoSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,6 +106,8 @@
             // 
             // BaoCaoThongKe
             // 
+            this.BaoCaoThongKe.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.báoCáoSinhViênToolStripMenuItem});
             this.BaoCaoThongKe.Name = "BaoCaoThongKe";
             this.BaoCaoThongKe.Size = new System.Drawing.Size(116, 20);
             this.BaoCaoThongKe.Text = "Báo Cáo Thống Kê";
@@ -128,17 +131,24 @@
             this.víDụToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.víDụToolStripMenuItem.Text = "Ví dụ";
             // 
-            // tổngSốKhoaToolStripMenuItem
-            // 
-            this.tổngSốKhoaToolStripMenuItem.Name = "tổngSốKhoaToolStripMenuItem";
-            this.tổngSốKhoaToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            // 
             // họcSqlDataAdapterToolStripMenuItem
             // 
             this.họcSqlDataAdapterToolStripMenuItem.Name = "họcSqlDataAdapterToolStripMenuItem";
             this.họcSqlDataAdapterToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.họcSqlDataAdapterToolStripMenuItem.Text = "Học SqlDataAdapter";
             this.họcSqlDataAdapterToolStripMenuItem.Click += new System.EventHandler(this.họcSqlDataAdapterToolStripMenuItem_Click);
+            // 
+            // tổngSốKhoaToolStripMenuItem
+            // 
+            this.tổngSốKhoaToolStripMenuItem.Name = "tổngSốKhoaToolStripMenuItem";
+            this.tổngSốKhoaToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // báoCáoSinhViênToolStripMenuItem
+            // 
+            this.báoCáoSinhViênToolStripMenuItem.Name = "báoCáoSinhViênToolStripMenuItem";
+            this.báoCáoSinhViênToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.báoCáoSinhViênToolStripMenuItem.Text = "Báo Cáo Sinh Viên";
+            this.báoCáoSinhViênToolStripMenuItem.Click += new System.EventHandler(this.báoCáoSinhViênToolStripMenuItem_Click);
             // 
             // QuanLySinhVien
             // 
@@ -172,6 +182,7 @@
         private System.Windows.Forms.ToolStripMenuItem tổngSốKhoaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem víDụToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem họcSqlDataAdapterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem báoCáoSinhViênToolStripMenuItem;
     }
 }
 

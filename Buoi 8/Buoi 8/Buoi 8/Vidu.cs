@@ -92,11 +92,11 @@ namespace Buoi_8
 
         private void cbbKhoa_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            /*dsLop.Clear();
-            string strSqlLopTheoKhoa = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa AND K.TenKhoa = '" + cbbKhoa.Text + "'";
+            dsLop.Clear();
+            string strSqlLopTheoKhoa = "SELECT L.MaLop, L.TenLop, K.TenKhoa FROM LOP L, KHOA K WHERE L.MaKhoa = K.MaKhoa AND K.MaKhoa = '" + cbbKhoa.SelectedValue + "'";
             adapter = new SqlDataAdapter(strSqlLopTheoKhoa, conn);
             adapter.Fill(dsLopKhoa, "LOP"); // Đặt tên cho bảng là LOP
-            dgvLop.DataSource = dsLopKhoa.Tables[0];/*/
+            dgvLop.DataSource = dsLopKhoa.Tables[0];
         }
 
         private void btnSua_Click(object sender, EventArgs e)
